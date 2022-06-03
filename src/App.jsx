@@ -1,14 +1,14 @@
 import './App.css';
 import React from "react";
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import Home from './pages/Home';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import ErrorPage from './pages/Error-Page';
-import NavigationBar from './pages/Navbar';
-import History from './pages/History';
-import Gallery from './pages/Gallery';
-import References from './pages/References';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Contact from './pages/Contact/Contact';
+import ErrorPage from './pages/ErrorPage/Error-Page';
+import NavigationBar from './pages/Navbar/Navbar';
+import History from './pages/History/History';
+import Gallery from './pages/Gallery/Gallery';
+import References from './pages/References/References';
 import { Container } from 'react-bootstrap';
 
 function App() {

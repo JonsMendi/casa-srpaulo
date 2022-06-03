@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa'
-import logo from '../images/joao-cookingcode-logo_v5 copy.png'
+import logo from '../../images/joao-cookingcode-logo_v5 copy.png'
 import { Link } from 'react-scroll'
 import './Navbar.css';
 
