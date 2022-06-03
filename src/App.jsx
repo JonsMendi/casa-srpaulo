@@ -9,6 +9,7 @@ import NavigationBar from './pages/Navbar/Navbar';
 import History from './pages/History/History';
 import Gallery from './pages/Gallery/Gallery';
 import References from './pages/References/References';
+import Footer from './pages/Footer/Footer'
 import { Container } from 'react-bootstrap';
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
       {/* Routes defined under. Important to remember that default path ('/') need to be in the top and ('*') in the bottom*/}
       <Routes>
         <Route path='/' element={<Home  />}/>
-        <Route path='/about/details' element={<About />}/>
+        <Route path='/about' element={<About />}/>
         <Route path='/contact' element={<Contact />}/>
         <Route path='/history' element={<History />}/>
         <Route path='/gallery' element={<Gallery />}/>
@@ -34,6 +35,7 @@ function App() {
       <History />
       <Gallery />
       <References/>
+      <Footer/>
     </Router>
     
       </div>
