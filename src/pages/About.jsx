@@ -1,13 +1,18 @@
 import React from "react";
+import Container from "react-bootstrap/Container";
+import './About.css';
 
 function About () {
     return (
-        <div id="about">
-            <h1>About</h1>
-            <h3>What are we?</h3>
-            <h3>What we offer?</h3>
-            <h3>Why us?</h3>
-        </div>
+        <Container className="about-container">
+           <div className="about-content" id="about">
+                <h1>About</h1>
+                <p>What are we?</p>
+                <p>What we offer?</p>
+                <p>Why us?</p>
+            </div> 
+        </Container>
+        
     )
 }
 

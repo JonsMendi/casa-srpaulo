@@ -15,9 +15,9 @@ function NavigationBar () {
     return (
         <div className='header'>
             <nav className='navbar'>
-                <Link href='/' className='logo'>
+                <a href='#' className='logo'>
                     <img src={logo} style={{width: "50px"}} alt='logo' />
-                </Link>
+                </a>
                 <div className='hamburger' onClick={handleClick}>
                     {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
                         : (<FaBars size={30} style={{ color: '#ffffff' }} />)}
@@ -25,22 +25,22 @@ function NavigationBar () {
                 </div>
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
                     <li className='nav-item'>
-                        <Link to="home" spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>Home</Link>
+                        <Link to="home" spy={true} smooth={true} offset={50} duration={50} onClick={closeMenu}>Home</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to="about" spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>About</Link>
+                        <Link to="about" spy={true} smooth={true} offset={50} duration={50} onClick={closeMenu}>About</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to="contact" spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>Contact</Link>
+                        <Link to="contact" spy={true} smooth={true} offset={50} duration={50} onClick={closeMenu}>Contact</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to="history" spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>History</Link>
+                        <Link to="history" spy={true} smooth={true} offset={50} duration={50} onClick={closeMenu}>History</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to="gallery" spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>Gallery</Link>
+                        <Link to="gallery" spy={true} smooth={true} offset={50} duration={50} onClick={closeMenu}>Gallery</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to="references" spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>References</Link>
+                        <Link to="references" spy={true} smooth={true} offset={50} duration={50} onClick={closeMenu}>References</Link>
                     </li>
                 </ul>
             </nav>

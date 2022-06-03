@@ -1,15 +1,15 @@
-.home-container {
+.contact-container {
     background-color: transparent;
     width: 100%;
     height: 100vh;
     position: relative;
 }
 
-.home-title {
+.contact-title {
     background-color: transparent;
 }
 
-.home-container .home-content {
+.contact-container .contact-content {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@
 }
 
 @media screen and (max-width:940px) {
-    .home-container .home-content {
+    .contact-container .contact-content {
         font-size: 1.5rem;
     }
 }
