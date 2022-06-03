@@ -1,7 +1,20 @@
+:root {
+    --primary-color: #5bb462;
+    --primary-dark: #4f9c55;
+    --secondary-color: #ffea00;
+    --secondary-dark:#e3d002;
+    --overlay: rgba(0,0,0,.7);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .index-container {
     background: url('https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_1280.jpg');
     max-width: 100%;
-    height: 2000px;
+    height: 100vh;
     z-index: -2;
 }
 

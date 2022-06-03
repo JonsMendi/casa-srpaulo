@@ -11,9 +11,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .app-container {
   background: transparent;
-  max-width: 100%;
+  width: 100%;
+  height: 100vh;
 }
 
 .app-div-wrapper {

@@ -1,8 +1,20 @@
 .home-container {
     background-color: transparent;
-    height: 1800px;
+    height: 100vh;
 }
 
 .home-title {
     background-color: transparent;
 }
+
+.round-hole {
+    padding: 10px;
+    background: red;
+}
+
+.round-hole2 {
+    padding: 10px;
+    margin: 10px;
+    background: green;
+} 
+
