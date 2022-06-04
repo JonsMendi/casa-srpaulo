@@ -31,7 +31,7 @@ function App() {
         <Route path='*' element={<ErrorPage  />}/>
       </Routes>
       <About />
-      <Contact /> 
+      <Contact />
       <History />
       <Gallery />
       <References/>

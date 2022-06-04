@@ -7,10 +7,9 @@ import './Navbar.css';
 
 function NavigationBar () {
     const [click, setClick] = useState(false)
+
     const handleClick = () => setClick(!click)
-
     const closeMenu = () => setClick(false)
-
 
     return (
         <div className='header'>

@@ -9,6 +9,7 @@ function Home () {
         <Container className="home-container" id="home">
             <div className="home-content">
                 <h1 className="home-title">Casa do Sr. Paulo</h1>
+                 <div className="bubble"></div>
                 <ButtonContact 
                     className='btns'
                     buttonStyle='btn--outline'
@@ -22,7 +23,8 @@ function Home () {
                     >
                     Watch the House</ButtonGallery>
             </div>
-            <div className="curve"></div>
+           
+            {/* <div className="curve"></div> */}
         </Container>
     )
 }

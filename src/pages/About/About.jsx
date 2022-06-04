@@ -12,8 +12,7 @@ function About () {
                 <p className="transparent-bg">What we offer?</p>
                 <p className="transparent-bg">Why us?</p>
             </div>
-        </Container>
-        
+        </Container> 
     )
 }
 
