@@ -8,9 +8,26 @@ function History () {
         <Container className='history-container'>
             <div className='history-content' id='history'>
                 <h1>History</h1>
-                <p>Nordeste</p>
-                <p>S. Pedro</p>
-                <p>Sr. Paulo e sua Familia</p>
+                <div className="explanation-wrapper">
+                   <div className="we">
+                    <p className="transparent-bg">Nordeste</p>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
+                        architecto beatae vitae dicta sunt explicabo.</p> 
+                    </div>
+                    <div className="offer">
+                    <p className="transparent-bg">S. Pedro</p>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
+                        architecto beatae vitae dicta sunt explicabo.</p> 
+                    </div>
+                    <div className="why">
+                    <p className="transparent-bg">Sr. Paulo e sua familia</p> 
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
+                        architecto beatae vitae dicta sunt explicabo.</p>   
+                    </div> 
+                </div>
             </div>
         </Container>
         

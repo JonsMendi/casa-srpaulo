@@ -20,7 +20,7 @@ export const ButtonContact = ({
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
   return (
-    <Link to='contact' spy={true} smooth={true} offset={50} duration={50} className='btn-mobile'>
+    <Link to='contact' spy={true} smooth={true} offset={50} duration={50} className='button-ind'>
       <button
         className={`btn ${checkButtonStyle} ${checkButtonSize}`}
         onClick={onClick}
@@ -46,7 +46,7 @@ export const ButtonGallery = ({
     const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
   
     return (
-      <Link to='gallery' spy={true} smooth={true} offset={50} duration={50} className='btn-mobile'>
+      <Link to='gallery' spy={true} smooth={true} offset={50} duration={50} className='button-ind'>
         <button
           className={`btn ${checkButtonStyle} ${checkButtonSize}`}
           onClick={onClick}

@@ -1,8 +1,18 @@
 .home-container {
-    background: #2f2f3d;
+    background: rgba(1, 1, 1, 0.8);
     width: 100%;
     height: 100vh;
     position: relative;
+}
+
+
+.bubble {
+    background: url("https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_1280.jpg") center no-repeat;
+    width:300px; 
+    height:300px; 
+    margin:1px auto;
+    border-radius:150px; 
+    border:1px solid #000;
 }
 
 .home-title {
@@ -17,18 +27,18 @@
     max-width: 1100px;
     margin: auto;
     padding: 1rem;
-    background: #2f2f3d;
+    background: transparent;
 }
 
-.curve {
+/* .curve {
     position: absolute;
     height: 225px;
     width: 100%;
     bottom: 0;
     background: transparent;
-}
+} */
 
-.curve::before {
+/* .curve::before {
     content: '';
     display: block;
     position: absolute;
@@ -38,9 +48,9 @@
     background-color: #16161d;
     transform: translate(80%, 57%);
     z-index: +1;
-}
+} */
 
-.curve::after {
+/* .curve::after {
     content: '';
     display: block;
     position: absolute;
@@ -50,6 +60,10 @@
     background-color: #2f2f3d;
     transform: translate(-2.1%, 17%);
     z-index: 1;
+} */
+
+.button-wrapper {
+    background: transparent;
 }
 
 @media screen and (max-width:940px) {

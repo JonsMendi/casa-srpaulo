@@ -19,25 +19,24 @@ function App() {
     <Container className='app-container'>
       <div className='app-div-wrapper'>
         <Router>
-      <NavigationBar/>
+          <NavigationBar/>
       {/* Routes defined under. Important to remember that default path ('/') need to be in the top and ('*') in the bottom*/}
-      <Routes>
-        <Route path='/' element={<Home  />}/>
-        <Route path='/about' element={<About />}/>
-        <Route path='/contact' element={<Contact />}/>
-        <Route path='/history' element={<History />}/>
-        <Route path='/gallery' element={<Gallery />}/>
-        <Route path='/references' element={<References />}/>
-        <Route path='*' element={<ErrorPage  />}/>
-      </Routes>
-      <About />
-      <Contact /> 
-      <History />
-      <Gallery />
-      <References/>
-      <Footer/>
-    </Router>
-    
+          <Routes>
+            <Route path='/' element={<Home  />}/>
+            <Route path='/about' element={<About />}/>
+            <Route path='/contact' element={<Contact />}/>
+            <Route path='/history' element={<History />}/>
+            <Route path='/gallery' element={<Gallery />}/>
+            <Route path='/references' element={<References />}/>
+            <Route path='*' element={<ErrorPage  />}/>
+          </Routes>
+          <About />
+          <Contact />
+          <References/>
+          <Gallery />
+          <History />
+          <Footer/>
+        </Router>
       </div>
     </Container>
     
