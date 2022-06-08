@@ -7,16 +7,16 @@
   }
   
   .btn--primary {
-    background-color: #f2f2ed;
+    background-color: #FFEE63;
     color: black;
-    border: 1px solid #dee3de;
+    border: 1px solid black;
   }
   
   .btn--outline {
     background-color: transparent;
     color: #fff;
     padding: 8px 20px;
-    border: 1px solid white;
+    border: 1px solid #FFEE63;
     transition: all 0.3s ease-out;
   }
   

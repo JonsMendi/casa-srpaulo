@@ -15,7 +15,7 @@ function NavigationBar () {
         <div className='header'>
             <nav className='navbar'>
                 <a href='#' className='logo'>
-                    <img src={logo} style={{width: "50px"}} alt='logo' />
+                    <p>Casa do Sr. Paulo</p>
                 </a>
                 <div className='hamburger' onClick={handleClick}>
                     {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)

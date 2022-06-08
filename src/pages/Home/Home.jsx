@@ -26,7 +26,7 @@ function Home () {
                         Watch the House</ButtonGallery> 
                     </div> 
                 </div>
-                <div className="bubble"></div>
+                {/* <div className="bubble"></div> */}
             </div>
            
             {/* <div className="curve"></div> */}
