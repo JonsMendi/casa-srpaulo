@@ -1,18 +1,18 @@
 export const GalleryData = [ 
     {
         id: 1,
-        image: 'https://media.istockphoto.com/photos/billboard-mock-up-in-city-background-beautiful-sunshine-and-bright-picture-id1395728996?b=1&k=20&m=1395728996&s=170667a&w=0&h=ia_dFlGxYd4ggN3xt2gkbdQXK2solX-oF7WYArHpygo='
+        image: 'https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/213471634.jpg?k=7d7a238f9353bc8d7296f8f3455ac892ba5520203870e930c0800fa849fbede2&o=&hp=1'
     },
     {
         id: 2,
-        image: 'https://media.istockphoto.com/photos/empty-lightbox-on-the-street-of-a-city-billboard-placeholder-mockup-picture-id1400166154?b=1&k=20&m=1400166154&s=170667a&w=0&h=ejVOG6pNwQ23Mg0IdqL1jcazz7Zo7UNXQdz3DGuwskg='
+        image: 'https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/213471637.jpg?k=449955b54d6776b0cb41fb489bc0ad6b187b72498a511f828b1be91bbd472bc6&o=&hp=1'
     },
     {
         id: 3,
-        image: 'https://media.istockphoto.com/photos/dog-cardboar-neutral-on-member-of-bone-gang-picture-id187895300?b=1&k=20&m=187895300&s=170667a&w=0&h=Cikee4baMVe3JW0VqfAc3o7LLFDcGGx32HvwbkdMVaM='
+        image: 'https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/213471630.jpg?k=3f44e97df5e04e1afc51c7e6bf853ebbfb1675b93b20744cc59c50f8223f4d48&o=&hp=1'
     },
     {
         id: 4,
-        image: 'https://images.unsplash.com/photo-1596887245124-5150ad2491e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGxhY2Vob2xkZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60'
+        image: 'https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/213471643.jpg?k=41b6af234fca9e9bea9fc11facd667cd1f42254a8ffce9d5dd5ab7bc7c44c1f7&o=&hp=1'
     },
  ]
