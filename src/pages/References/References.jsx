@@ -1,5 +1,6 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
+import { AiOutlinePlusCircle } from "react-icons/ai";
 import './References.css';
 
 function References  ()  {
@@ -9,23 +10,35 @@ function References  ()  {
             <div className='references-content' id='references'>
                 <h1>References</h1>
                 <div className="explanation-wrapper">
-                   <div className="we">
-                    <p className="transparent-bg">Activities</p>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
-                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
-                        architecto beatae vitae dicta sunt explicabo.</p> 
+                    <div className="explanation-content">
+                        <h5 className="transparent-bg">Activities</h5>
+                        <div className="text_plus-wrapper"> 
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
+                            architecto beatae vitae dicta sunt explicabo.
+                            </p>
+                            <AiOutlinePlusCircle fill='#e9d856' className='plus-icon' size={28} />
+                        </div> 
                     </div>
-                    <div className="offer">
-                    <p className="transparent-bg">Gastronomy</p>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
-                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
-                        architecto beatae vitae dicta sunt explicabo.</p> 
+                    <div className="explanation-content">
+                        <h5 className="transparent-bg">Gastronomy</h5>
+                        <div className="text_plus-wrapper"> 
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
+                            architecto beatae vitae dicta sunt explicabo.
+                            </p>
+                            <AiOutlinePlusCircle fill='#e9d856' className='plus-icon' size={28} />
+                        </div> 
                     </div>
-                    <div className="why">
-                    <p className="transparent-bg">Attractions</p> 
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
-                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
-                        architecto beatae vitae dicta sunt explicabo.</p>   
+                    <div className="explanation-content">
+                        <h5 className="transparent-bg">Attractions</h5>
+                        <div className="text_plus-wrapper"> 
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
+                            architecto beatae vitae dicta sunt explicabo.
+                            </p>
+                            <AiOutlinePlusCircle fill='#e9d856' className='plus-icon' size={28} />
+                        </div>  
                     </div> 
                 </div>
             </div> 

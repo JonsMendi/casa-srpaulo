@@ -7,7 +7,7 @@
   }
   
   .btn--primary {
-    background-color: #FFEE63;
+    background-color: #e9d856;
     color: black;
     border: 1px solid black;
   }
@@ -16,7 +16,7 @@
     background-color: transparent;
     color: #fff;
     padding: 8px 20px;
-    border: 1px solid #FFEE63;
+    border: 1px solid #e9d856;
     transition: all 0.3s ease-out;
   }
   
