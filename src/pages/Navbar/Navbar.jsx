@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa'
-import logo from '../../images/joao-cookingcode-logo_v5 copy.png'
+import logo from '../../images/casasr.png'
 import { Link } from 'react-scroll'
 import './Navbar.css';
 
@@ -15,11 +15,12 @@ function NavigationBar () {
         <div className='header'>
             <nav className='navbar'>
                 <a href='#' className='logo'>
-                    <p className='logo-text'>Casa do Sr. Paulo</p>
+                    {/* <p className='logo-text'>Casa do Sr. Paulo</p> */}
+                    <img src={logo} className='logo-casa' alt='logo representing the house silhouette'/>
                 </a>
                 <div className='hamburger' onClick={handleClick}>
-                    {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
-                        : (<FaBars size={30} style={{ color: '#ffffff' }} />)}
+                    {click ? (<FaTimes size={30} className='hamburger-detail' />)
+                        : (<FaBars size={30} className='hamburger-detail' />)}
 
                 </div>
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
@@ -33,13 +34,13 @@ function NavigationBar () {
                         <Link to="contact" spy={true} smooth={true} offset={50} duration={50} onClick={closeMenu}>Contact</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to="history" spy={true} smooth={true} offset={50} duration={50} onClick={closeMenu}>History</Link>
-                    </li>
-                    <li className='nav-item'>
-                        <Link to="gallery" spy={true} smooth={true} offset={50} duration={50} onClick={closeMenu}>Gallery</Link>
-                    </li>
-                    <li className='nav-item'>
                         <Link to="references" spy={true} smooth={true} offset={50} duration={50} onClick={closeMenu}>References</Link>
+                    </li>
+                    <li className='nav-item'>
+                        <Link to="gallery" spy={true} smooth={true} offset={10} duration={50} onClick={closeMenu}>Gallery</Link>
+                    </li>
+                    <li className='nav-item'>
+                        <Link to="history" spy={true} smooth={true} offset={50} duration={50} onClick={closeMenu}>History</Link>
                     </li>
                 </ul>
             </nav>
