@@ -12,9 +12,11 @@
 }
 
 .index-container {
-    background: url('https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_1280.jpg');
-    max-width: 100%;
-    height: 100vh;
+    background: url('https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/213471636.jpg?k=7d03bb3f3f8b681690e5a02d93f531ea72cb3285acc0a0221b72a815f01c8dd2&o=&hp=1') no-repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
     z-index: -2;
 }
 
