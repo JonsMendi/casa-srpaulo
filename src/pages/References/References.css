@@ -17,7 +17,8 @@
 }
 
 @media screen and (max-width:940px) {
-    .references-container .references-content {
+    .references-container .references-content .transparent-bg {
         font-size: 1.5rem;
-    }
+    } 
+
 }

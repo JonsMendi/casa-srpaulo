@@ -36,7 +36,16 @@
 
 
 @media screen and (max-width:940px) {
-    .about-container .about-content {
+    .about-container .about-content .transparent-bg {
         font-size: 1.5rem;
     }
+
+    .about-container {
+        margin-top: 3rem;
+    }
+    
+   .explanation-wrapper  {
+       flex-direction: column;
+   }
+    
 }
