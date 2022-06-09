@@ -17,6 +17,7 @@
 
 .home-title {
     background-color: transparent;
+    color: #FFEE63;
 
 }
 
@@ -71,7 +72,7 @@
     background: transparent;
     position: absolute;
     top: 16rem;
-    left: 1rem;
+    left: 2rem;
    
 }
 
