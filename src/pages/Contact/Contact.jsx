@@ -1,5 +1,4 @@
 import React from "react";
-import { SiAirbnb } from "react-icons/si"
 import { TbBrandBooking, TbAt, TbBrandAirbnb } from 'react-icons/tb'
 import './Contact.css';
 

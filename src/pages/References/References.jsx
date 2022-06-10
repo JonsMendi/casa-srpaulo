@@ -1,8 +1,11 @@
 import React from 'react';
 import { AiOutlinePlusCircle } from "react-icons/ai";
+import {useNavigate} from 'react-router';
 import './References.css';
 
 function References  ()  {
+    const navigator = useNavigate();
+
 
     return (
         <section className="references-container">
@@ -16,7 +19,7 @@ function References  ()  {
                             laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
                             architecto beatae vitae dicta sunt explicabo.
                             </p>
-                            <AiOutlinePlusCircle fill='#e9d856' className='plus-icon' size={28} />
+                            <AiOutlinePlusCircle fill='#e9d856' className='plus-icon' size={28} onClick={() => navigator('/activities')} />
                         </div> 
                     </div>
                     <div className="explanation-content">
@@ -26,7 +29,7 @@ function References  ()  {
                             laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
                             architecto beatae vitae dicta sunt explicabo.
                             </p>
-                            <AiOutlinePlusCircle fill='#e9d856' className='plus-icon' size={28} />
+                            <AiOutlinePlusCircle fill='#e9d856' className='plus-icon' size={28} onClick={() => navigator('/gastronomy')} />
                         </div> 
                     </div>
                     <div className="explanation-content">
@@ -36,7 +39,7 @@ function References  ()  {
                             laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
                             architecto beatae vitae dicta sunt explicabo.
                             </p>
-                            <AiOutlinePlusCircle fill='#e9d856' className='plus-icon' size={28} />
+                            <AiOutlinePlusCircle fill='#e9d856' className='plus-icon' size={28} onClick={() => navigator('/attractions')} />
                         </div>  
                     </div> 
                 </div>

@@ -7,8 +7,7 @@
     z-index: 3;
     transition: .3s ease-in;
     overflow: hidden;
-    background-color: #e9d856;
-    border-bottom: 3px solid #e9d856;
+    background-color: rgba(233,216,86);
 }
 
 .header .navbar {
@@ -46,8 +45,8 @@
 .header .nav-item {
     padding: 1.2rem;
     list-style: none;
-    font-size: 13px;
-    background-color: #e9d856;
+    font-size: 15px;
+    background-color: rgba(233,216,86);
 }
 
 .header .nav-item a:hover {
@@ -81,7 +80,7 @@
 @media screen and (max-width:940px) {
     .header {
         max-width: 100%;
-        background-color: rgba(0,0,0,.7);
+        background-color: rgba(233,216,86);
     }
 
     .header .navbar {
