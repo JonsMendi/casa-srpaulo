@@ -1,9 +1,12 @@
 import React from 'react';
 import { AiOutlinePlusCircle } from "react-icons/ai";
+import { useNavigate } from 'react-router';
 import './History.css'
 
 
 function History () {
+    const navigator = useNavigate();
+
     return (
         <section className='history-container'>
             <div className='history-content' id='history'>
@@ -16,7 +19,7 @@ function History () {
                             laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
                             architecto beatae vitae dicta sunt explicabo.
                             </p>
-                            <AiOutlinePlusCircle fill='#e9d856' className='plus-icon' size={28} />
+                            <AiOutlinePlusCircle fill='#e9d856' className='plus-icon' size={28} onClick={() => navigator('/nordeste')}/>
                         </div> 
                     </div>
                     <div className="explanation-content">
@@ -26,7 +29,7 @@ function History () {
                             laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
                             architecto beatae vitae dicta sunt explicabo.
                             </p>
-                            <AiOutlinePlusCircle fill='#e9d856' className='plus-icon' size={28} />
+                            <AiOutlinePlusCircle fill='#e9d856' className='plus-icon' size={28} onClick={() => navigator('/spedro')}/>
                         </div> 
                     </div>
                     <div className="explanation-content">
@@ -36,7 +39,7 @@ function History () {
                             laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
                             architecto beatae vitae dicta sunt explicabo.
                             </p>
-                            <AiOutlinePlusCircle fill='#e9d856' className='plus-icon' size={28} />
+                            <AiOutlinePlusCircle fill='#e9d856' className='plus-icon' size={28} onClick={() => navigator('/srpaulofamily')}/>
                         </div> 
                     </div> 
                 </div>

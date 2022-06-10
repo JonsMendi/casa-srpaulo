@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { GalleryData } from '../Gallery/Gallery-Data';
-import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa';
+import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 import './Gallery.css';
 
 function Gallery ({ slides }) {
@@ -25,8 +25,8 @@ function Gallery ({ slides }) {
             <div className='gallery-content' id='gallery'>
                 <h1>Gallery</h1>
                 <div className='gallery-slider'>
-                    <FaArrowAltCircleLeft className='gallery-arrow_left' onClick={previousSlide}/>
-                    <FaArrowAltCircleRight className='gallery-arrow_right' onClick={nextSlide}/>
+                    <FiChevronLeft className='gallery-arrow_left' size={30} onClick={previousSlide}/>
+                    <FiChevronRight className='gallery-arrow_right' size={30} onClick={nextSlide}/>
                    {GalleryData.map((slide, index) => {
                        return (
                            <div className={index === current ? 'slide active' : 'slide'} key={index}>
