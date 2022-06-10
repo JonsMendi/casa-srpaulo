@@ -1,12 +1,11 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
 import { AiOutlinePlusCircle } from "react-icons/ai";
 import './References.css';
 
 function References  ()  {
 
     return (
-        <Container className="references-container">
+        <section className="references-container">
             <div className='references-content' id='references'>
                 <h1>References</h1>
                 <div className="explanation-wrapper">
@@ -42,7 +41,7 @@ function References  ()  {
                     </div> 
                 </div>
             </div> 
-        </Container>
+        </section>
         
     );
 };

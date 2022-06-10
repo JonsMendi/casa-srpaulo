@@ -1,5 +1,4 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
 import { SiAirbnb } from "react-icons/si"
 import { TbBrandBooking, TbAt, TbBrandAirbnb } from 'react-icons/tb'
 import './Contact.css';
@@ -7,7 +6,7 @@ import './Contact.css';
 const Contact = () => {
 
     return (
-        <Container className="contact-container" id="contact">
+        <section className="contact-container" id="contact">
             <div className="contact-content">
                 <h1 className="contact-title">Contact</h1>
                 <div className="contact-button-wrapper">
@@ -27,7 +26,7 @@ const Contact = () => {
                 
             </div>
            
-        </Container>
+        </section>
     )
 }
 
