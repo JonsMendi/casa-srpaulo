@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/casa-srpaulo/static/css/main.52cce8d5.css",
+    "main.js": "/casa-srpaulo/static/js/main.60e70965.js",
+    "static/js/787.9b792c06.chunk.js": "/casa-srpaulo/static/js/787.9b792c06.chunk.js",
+    "static/media/casasr.png": "/casa-srpaulo/static/media/casasr.85a9c1560842afd3f632.png",
+    "index.html": "/casa-srpaulo/index.html",
+    "main.52cce8d5.css.map": "/casa-srpaulo/static/css/main.52cce8d5.css.map",
+    "main.60e70965.js.map": "/casa-srpaulo/static/js/main.60e70965.js.map",
+    "787.9b792c06.chunk.js.map": "/casa-srpaulo/static/js/787.9b792c06.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.52cce8d5.css",
+    "static/js/main.60e70965.js"
+  ]
+}
