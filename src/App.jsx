@@ -21,12 +21,12 @@ function App() {
       {/* Routes defined under. Important to remember that default path ('/') need to be in the top and ('*') in the bottom*/}
           <Routes>
             <Route path='/' element={<Main />}/>
-            <Route exact path='/activities' element={<Activities />}/>
-            <Route exact path='/attractions' element={<Attractions />}/>
-            <Route exact path='/gastronomy' element={<Gastronomy />}/>
-            <Route exact path='/nordeste' element={<Nordeste />}/>
-            <Route exact path='/spedro' element={<SPedro />}/>
-            <Route exact path='/srpaulofamily' element={<SrPauloFamily />}/>
+            <Route path='/activities' element={<Activities />}/>
+            <Route path='/attractions' element={<Attractions />}/>
+            <Route path='/gastronomy' element={<Gastronomy />}/>
+            <Route path='/nordeste' element={<Nordeste />}/>
+            <Route path='/spedro' element={<SPedro />}/>
+            <Route path='/srpaulofamily' element={<SrPauloFamily />}/>
             <Route path='*' element={<ErrorPage  />}/>
           </Routes>
         </Router>
