@@ -22,7 +22,7 @@ function App() {
         <Router>
           <NavigationBar/>
       {/* Routes defined under. Important to remember that default path ('/') need to be in the top and ('*') in the bottom*/}
-          <Routes>
+          {/* <Routes>
             <Route path='/' element={<Home  />}/>
             <Route path='/about' element={<About />}/>
             <Route path='/contact' element={<Contact />}/>
@@ -30,7 +30,8 @@ function App() {
             <Route path='/gallery' element={<Gallery />}/>
             <Route path='/references' element={<References />}/>
             <Route path='*' element={<ErrorPage  />}/>
-          </Routes>
+          </Routes> */}
+          <Home />
           <About />
           <Contact />
           <References/>

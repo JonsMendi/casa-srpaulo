@@ -25,7 +25,7 @@ function NavigationBar () {
                 </div>
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
                     <li className='nav-item'>
-                        <Link to="home" spy={true} smooth={true} offset={50} duration={50} onClick={closeMenu}>Home</Link>
+                        <Link to="home" spy={true} smooth={true} offset={0} duration={50} onClick={closeMenu}>Home</Link>
                     </li>
                     <li className='nav-item'>
                         <Link to="about" spy={true} smooth={true} offset={50} duration={50} onClick={closeMenu}>About</Link>
