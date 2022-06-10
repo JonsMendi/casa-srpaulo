@@ -1,12 +1,11 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
 import { AiOutlinePlusCircle } from "react-icons/ai";
 import './History.css'
 
 
 function History () {
     return (
-        <Container className='history-container'>
+        <section className='history-container'>
             <div className='history-content' id='history'>
                 <h1>History</h1>
                 <div className="explanation-wrapper">
@@ -42,7 +41,7 @@ function History () {
                     </div> 
                 </div>
             </div>
-        </Container>
+        </section>
         
     );
 };

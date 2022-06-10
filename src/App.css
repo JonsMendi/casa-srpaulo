@@ -1,20 +1,3 @@
-* {
-  box-sizing: border-box;
-  background-color: rgb(246, 245, 246);
-  color: rgb(59, 57, 63);;
-}
-
-body {
-  margin: 0;
-  font-family: 'Kdam Thmor Pro', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 .app-container {
   background: transparent;
   width: 100%;

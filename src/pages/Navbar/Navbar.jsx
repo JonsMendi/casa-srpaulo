@@ -12,7 +12,7 @@ function NavigationBar () {
     const closeMenu = () => setClick(false)
 
     return (
-        <div className='header'>
+        <section className='header'>
             <nav className='navbar'>
                 <a href='#' className='logo'>
                     {/* <p className='logo-text'>Casa do Sr. Paulo</p> */}
@@ -44,7 +44,7 @@ function NavigationBar () {
                     </li>
                 </ul>
             </nav>
-        </div>
+        </section>
         
     );
 };

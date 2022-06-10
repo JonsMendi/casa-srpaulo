@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import Container from 'react-bootstrap/Container';
 import { GalleryData } from '../Gallery/Gallery-Data';
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa';
 import './Gallery.css';
@@ -22,7 +21,7 @@ function Gallery ({ slides }) {
 
 
     return (
-        <Container className="gallery-container">
+        <section className="gallery-container">
             <div className='gallery-content' id='gallery'>
                 <h1>Gallery</h1>
                 <div className='gallery-slider'>
@@ -37,7 +36,7 @@ function Gallery ({ slides }) {
                    })}
                 </div>
             </div> 
-        </Container>
+        </section>
         
     );
 }

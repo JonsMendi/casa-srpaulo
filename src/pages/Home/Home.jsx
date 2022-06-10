@@ -1,12 +1,11 @@
 import React from "react";
-import Container from 'react-bootstrap/Container';
 import { ButtonContact, ButtonGallery } from '../Button/Button';
 import './Home.css';
 
 function Home () {    
 
     return (
-        <Container className="home-container" id="home">
+        <section className="home-container" id="home">
             <div className="home-content">
                 <div className="all-content-wrapper"></div>
                 <div className="content-wrapper">
@@ -30,7 +29,7 @@ function Home () {
             </div>
            
             {/* <div className="curve"></div> */}
-        </Container>
+        </section>
     )
 }
 
