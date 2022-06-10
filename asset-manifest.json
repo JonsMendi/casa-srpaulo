@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.0016de53.css",
-    "main.js": "/static/js/main.db484d6b.js",
-    "static/js/787.9b792c06.chunk.js": "/static/js/787.9b792c06.chunk.js",
-    "static/media/casasr.png": "/static/media/casasr.85a9c1560842afd3f632.png",
-    "index.html": "/index.html",
-    "main.0016de53.css.map": "/static/css/main.0016de53.css.map",
-    "main.db484d6b.js.map": "/static/js/main.db484d6b.js.map",
-    "787.9b792c06.chunk.js.map": "/static/js/787.9b792c06.chunk.js.map"
+    "main.css": "/casa-srpaulo/static/css/main.d2f5db40.css",
+    "main.js": "/casa-srpaulo/static/js/main.a7d2b164.js",
+    "static/js/787.9b792c06.chunk.js": "/casa-srpaulo/static/js/787.9b792c06.chunk.js",
+    "static/media/casasr.png": "/casa-srpaulo/static/media/casasr.85a9c1560842afd3f632.png",
+    "index.html": "/casa-srpaulo/index.html",
+    "main.d2f5db40.css.map": "/casa-srpaulo/static/css/main.d2f5db40.css.map",
+    "main.a7d2b164.js.map": "/casa-srpaulo/static/js/main.a7d2b164.js.map",
+    "787.9b792c06.chunk.js.map": "/casa-srpaulo/static/js/787.9b792c06.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0016de53.css",
-    "static/js/main.db484d6b.js"
+    "static/css/main.d2f5db40.css",
+    "static/js/main.a7d2b164.js"
   ]
 }
