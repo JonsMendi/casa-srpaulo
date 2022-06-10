@@ -28,7 +28,7 @@ function NavigationBar () {
                         <Link to="home" spy={true} smooth={true} offset={0} duration={50} onClick={closeMenu}>Home</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link href="about" spy={true} smooth={true} offset={50} duration={50} onClick={closeMenu}>About</Link>
+                        <Link to="about" spy={true} smooth={true} offset={50} duration={50} onClick={closeMenu}>About</Link>
                     </li>
                     <li className='nav-item'>
                         <Link to="contact" spy={true} smooth={true} offset={50} duration={50} onClick={closeMenu}>Contact</Link>

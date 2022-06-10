@@ -20,6 +20,7 @@ function App() {
           <NavigationBar/>
       {/* Routes defined under. Important to remember that default path ('/') need to be in the top and ('*') in the bottom*/}
           <Routes>
+            {/* Under, use process.env.PUBLIC_URL in route definitions so that they work both in development and after deployment.*/}
             <Route path={process.env.PUBLIC_URL + '/'} element={<Main />}/>
             <Route path='/activities' element={<Activities />}/>
             <Route path='/attractions' element={<Attractions />}/>
