@@ -1,6 +1,6 @@
 # Description
 
-This is a rental house web application build with React.<br>
+This is a holiday house web application build with React.<br>
 (under-construction)
 
 ## Build
