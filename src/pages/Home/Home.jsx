@@ -10,6 +10,7 @@ function Home () {
                 <div className="all-content-wrapper"></div>
                 <div className="content-wrapper">
                    <h1 className="home-title">Casa do Sr. Paulo</h1>
+                   <p className="home-title" style={{color: 'white'}}>Guest House</p>
                     <div className="button-wrapper">
                         <ButtonContact 
                             className='btn'
