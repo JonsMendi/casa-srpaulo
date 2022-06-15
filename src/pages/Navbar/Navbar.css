@@ -7,7 +7,7 @@
     z-index: 3;
     transition: .3s ease-in;
     overflow: hidden;
-    background-color: rgba(233,216,86);
+    background-color: rgba(233,216,86, .7);
 }
 
 .header .navbar {
@@ -40,13 +40,14 @@
 
 .nav-menu {
     margin-top: 4px;
+    background-color: transparent;
 }
 
 .header .nav-item {
     padding: 1.2rem;
     list-style: none;
     font-size: 15px;
-    background-color: rgba(233,216,86);
+    background-color: transparent;
 }
 
 .header .nav-item a:hover {

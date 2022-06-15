@@ -9,6 +9,7 @@ import References from '../pages/References/References';
 import Footer from '../pages/Footer/Footer';
 import { GalleryData } from '../pages/Gallery/Gallery-Data';
 import './Main.css';
+import HouseContent from './HouseContent/HouseContent';
 
 function Main() {
   return (
@@ -16,6 +17,7 @@ function Main() {
         <NavigationBar/>
         <Home />
         <About />
+        <HouseContent />
         <Contact />
         <References/>
         <Gallery slides={GalleryData}/>
