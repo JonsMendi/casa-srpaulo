@@ -18,11 +18,11 @@ function Main() {
         <Home />
         <About />
         <HouseContent />
-        <Contact />
         <References/>
         <Gallery slides={GalleryData}/>
-        <History />
-        <Footer/>
+        {/* <History /> */}
+        {/* <Footer/> */}
+        <Contact />
     </section>
   )
 }
