@@ -1,44 +1,72 @@
-import React, {useState} from 'react';
-import { GalleryData } from '../Gallery/Gallery-Data';
-import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
-import './Gallery.css';
+import React, { useState } from 'react';
+import { GalleryData } from "../../utilities/data";
+import { buttonVariants } from "../../utilities/motion-framer";
 
-function Gallery ({ slides }) {
-    const [current, setCurrent] = useState(0);
-    const slidesLength = slides.length;
+import { motion } from 'framer-motion';
+  
+  const PrevButton = ({ onClick }) => (
+    <motion.button
+      variants={buttonVariants}
+      whileHover="hover"
+      whileTap="tap"
+      initial="rest"
+      onClick={onClick}
+      className=" border border-[#DAD15F] text-white rounded-lg py-2 px-4 mr-4"
+    >
+      Prev
+    </motion.button>
+  );
+  
+  const NextButton = ({ onClick }) => (
+    <motion.button
+      variants={buttonVariants}
+      whileHover="hover"
+      whileTap="tap"
+      initial="rest"
+      onClick={onClick}
+      className=" border border-[#DAD15F] text-white rounded-lg py-2 px-4"
+    >
+      Next
+    </motion.button>
+  );
+  
+function Gallery () {
+    const [index, setIndex] = useState(0);
 
-    const nextSlide = () => {
-        setCurrent(current === slidesLength - 1 ? 0 : current + 1);
+    const handleNext = () => {
+      setIndex((index + 1) % GalleryData.length);
     };
-
-    const previousSlide = () => {
-        setCurrent(current === 0 ? slidesLength - 1 : current - 1);
+  
+    const handlePrev = () => {
+      setIndex((index - 1 + GalleryData.length) % GalleryData.length);
     };
-
-    if(!Array.isArray(slides) || slides.length <= 0) {
-        return null;
-    }
-
-
+  
     return (
-        <section className="gallery-container">
-            <div className='gallery-content' id='gallery'>
-                <h1>Gallery</h1>
-                <div className='gallery-slider'>
-                    <FiChevronLeft className='gallery-arrow_left' size={30} onClick={previousSlide}/>
-                    <FiChevronRight className='gallery-arrow_right' size={30} onClick={nextSlide}/>
-                   {GalleryData.map((slide, index) => {
-                       return (
-                           <div className={index === current ? 'slide active' : 'slide'} key={index}>
-                               {index === current && (<img src={slide.image} className='gallery-image' alt='carousel with house views'/>)}
-                           </div>
-                       )
-                   })}
-                </div>
-            </div> 
-        </section>
-        
+      <div className="relative w-full h-full">
+        {GalleryData.map((id, i) => (
+          <motion.div
+            key={id.id}
+            className="absolute top-0 left-0 w-full h-full overflow-hidden"
+            style={{ x: i === index ? 0 : "100%" }}
+            initial={{ x: i === index ? 0 : "100%" }}
+            animate={{ x: i === index ? 0 : "100%" }}
+            exit={{ x: i === index ? `-${window.innerWidth}px` : "100%" }}
+            transition={{ type: "tween", duration: 0.5 }}
+            {...id} 
+          >
+            <img
+              src={id.image}
+              alt={`Slide ${i}`}
+              className="w-full h-full object-cover"
+            />
+          </motion.div>
+        ))}
+        <div className="absolute top-1/2 left-0 transform -translate-y-1/2 w-full flex justify-between bg-transparent">
+        <PrevButton onClick={handlePrev} />
+        <NextButton onClick={handleNext} />
+        </div>
+      </div>
     );
-}
+  };
 
 export default Gallery;

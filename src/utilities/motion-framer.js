@@ -51,10 +51,30 @@ export const containerVariants = {
   },
 };
 
+export const buttonVariants = {
+  rest: {
+    backgroundColor: "rgba(0,0,0, 0.2)",
+    color: "#fff",
+    scale: 1,
+  },
+  hover: {
+    backgroundColor: "rgba(0,0,0, 0.2)",
+    color: "#000",
+    scale: 1.1,
+  },
+  tap: {
+    backgroundColor: "rgba(0,0,0, 0.2)",
+    color: "#fff",
+    scale: 0.9,
+  },
+};
+
 const motionVariants = {
   titleVariant,
   fadeInVariant,
   containerVariants,
+  buttonVariants,
 };
+
 
 export default motionVariants;
