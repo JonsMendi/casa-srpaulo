@@ -30,66 +30,39 @@ import postman from "/pages/assets/portfolio/postman.png";
 import myMovies from "/pages/assets/portfolio/movie-lists.png"; */
 
 
-
-/* export const navLinks = [
-  {
-    id: "about",
-    title: "About",
-  },
-  {
-    id: "work",
-    title: "Work",
-  },
-  {
-    id: "contact",
-    title: "Contact",
-  },
-]; */
-
 const houseContent = [
   {
     name: "Wi-fi",
-    icon: "icon",
   },
   {
     name: "Remote work",
-    icon: "icon",
   },
   {
     name: "Kitchen",
-    icon: "icon",
   },
   {
     name: "TV by cable",
-    icon: "icon",
   },
   {
     name: "Car Parking",
-    icon: "icon",
   },
   {
     name: "Washing Machine",
-    icon: "icon",
   },
   {
     name: "Microwave",
-    icon: "icon",
   },
   {
     name: "Garden",
-    icon: "icon",
   },
   {
     name: "Barbecue",
-    icon: "icon",
   },
   {
     name: "Mountain view",
-    icon: "icon",
   },
   {
     name: "Sea view",
-    icon: "icon",
   }
 ];
 
