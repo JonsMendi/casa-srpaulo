@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
+/* import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa'
 import logo from '../../images/casasr.png'
-import { Link } from 'react-scroll'
+import { Link } from 'react-scroll' */
 /* import './Navbar.css'; */
 
 
 function NavigationBar () {
-    const [click, setClick] = useState(false)
+    /* const [click, setClick] = useState(false) */
 
-    const handleClick = () => setClick(!click)
-    const closeMenu = () => setClick(false)
+    /* const handleClick = () => setClick(!click)
+    const closeMenu = () => setClick(false) */
 
     return (
         <section className='header'>

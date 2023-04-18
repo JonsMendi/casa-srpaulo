@@ -3,7 +3,7 @@ import Home from '../pages/Home/Home';
 import About from '../pages/About/About';
 import Contact from '../pages/Contact/Contact';
 import NavigationBar from '../pages/Navbar/Navbar';
-import History from '../pages/History/History';
+/* import History from '../pages/History/History'; */
 import Gallery from '../pages/Gallery/Gallery';
 import References from '../pages/References/References';
 import Footer from '../pages/Footer/Footer';

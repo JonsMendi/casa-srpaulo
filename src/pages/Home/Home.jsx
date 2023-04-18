@@ -1,7 +1,6 @@
 import React from "react";
-import { ButtonContact } from "../Button/Button";
 import { motion as m } from "framer-motion";
-import { titleVariant, entranceVariant } from "../../utilities/motion-framer";
+import { entranceVariant } from "../../utilities/motion-framer";
 import { styles } from "../../utilities/style";
 import { Link } from "react-scroll";
 import "./Home.css";
