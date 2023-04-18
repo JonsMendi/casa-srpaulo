@@ -7,6 +7,7 @@ function About () {
 
     return (
       <m.section
+      id="about"
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
@@ -30,7 +31,7 @@ function About () {
                 className="mt-4 mr-4 text-secondary text-[17px] max-w-3xl leading-[30px] flex-1"
             >
                 <span className="font-bold">What are we? </span>
-                A rental accommodation house that offers a unique and
+                A Guest House that offers a unique and
                 peaceful retreat in the heart of Nordeste. Surrounded by nature, our
                 house is the perfect place to unwind and recharge.
             </m.div>

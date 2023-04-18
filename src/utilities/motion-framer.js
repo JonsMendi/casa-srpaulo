@@ -69,11 +69,27 @@ export const buttonVariants = {
   },
 };
 
+export const entranceVariant = {
+  hidden: {
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+    transition: {
+      delay: 0.4,
+      duration: 1,
+      ease: "easeOut",
+    },
+  },
+};
+
+
 const motionVariants = {
   titleVariant,
   fadeInVariant,
   containerVariants,
   buttonVariants,
+  entranceVariant
 };
 
 

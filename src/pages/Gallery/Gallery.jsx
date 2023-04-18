@@ -1,72 +1,63 @@
 import React, { useState } from 'react';
-import { GalleryData } from "../../utilities/data";
-import { buttonVariants } from "../../utilities/motion-framer";
+import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
+import { RiRadioButtonFill } from 'react-icons/ri';
+import { GalleryData } from '../../utilities/data';
+import { motion as m } from "framer-motion";
+import { titleVariant } from "../../utilities/motion-framer";
 
-import { motion } from 'framer-motion';
-  
-  const PrevButton = ({ onClick }) => (
-    <motion.button
-      variants={buttonVariants}
-      whileHover="hover"
-      whileTap="tap"
-      initial="rest"
-      onClick={onClick}
-      className=" border border-[#DAD15F] text-white rounded-lg py-2 px-4 mr-4"
-    >
-      Prev
-    </motion.button>
-  );
-  
-  const NextButton = ({ onClick }) => (
-    <motion.button
-      variants={buttonVariants}
-      whileHover="hover"
-      whileTap="tap"
-      initial="rest"
-      onClick={onClick}
-      className=" border border-[#DAD15F] text-white rounded-lg py-2 px-4"
-    >
-      Next
-    </motion.button>
-  );
-  
-function Gallery () {
-    const [index, setIndex] = useState(0);
 
-    const handleNext = () => {
-      setIndex((index + 1) % GalleryData.length);
-    };
-  
-    const handlePrev = () => {
-      setIndex((index - 1 + GalleryData.length) % GalleryData.length);
-    };
-  
-    return (
-      <div className="relative w-full h-full">
-        {GalleryData.map((id, i) => (
-          <motion.div
-            key={id.id}
-            className="absolute top-0 left-0 w-full h-full overflow-hidden"
-            style={{ x: i === index ? 0 : "100%" }}
-            initial={{ x: i === index ? 0 : "100%" }}
-            animate={{ x: i === index ? 0 : "100%" }}
-            exit={{ x: i === index ? `-${window.innerWidth}px` : "100%" }}
-            transition={{ type: "tween", duration: 0.5 }}
-            {...id} 
-          >
-            <img
-              src={id.image}
-              alt={`Slide ${i}`}
-              className="w-full h-full object-cover"
-            />
-          </motion.div>
-        ))}
-        <div className="absolute top-1/2 left-0 transform -translate-y-1/2 w-full flex justify-between bg-transparent">
-        <PrevButton onClick={handlePrev} />
-        <NextButton onClick={handleNext} />
-        </div>
-      </div>
-    );
+function Gallery() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const prevSlide = () => {
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide ? GalleryData.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
   };
+
+  const nextSlide = () => {
+    const isLastSlide = currentIndex === GalleryData.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const goToSlide = (slideIndex) => {
+    setCurrentIndex(slideIndex);
+  };
+
+  return (
+    <m.div 
+    initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.25 }}
+        variants={titleVariant()}
+    className='max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative group'>
+      <div
+        style={{ backgroundImage: `url(${GalleryData[currentIndex].image})` }}
+        className='w-full h-full rounded-2xl bg-center bg-cover duration-500'
+      ></div>
+      {/* Left Arrow */}
+      <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+        <BsChevronCompactLeft onClick={prevSlide} size={30} />
+      </div>
+      {/* Right Arrow */}
+      <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+        <BsChevronCompactRight onClick={nextSlide} size={30} />
+      </div>
+      <div className='flex top-4 justify-center py-2'>
+        {GalleryData.map((slide, slideIndex) => (
+          <div
+            key={slideIndex}
+            onClick={() => goToSlide(slideIndex)}
+            className='text-2xl cursor-pointer'
+          >
+            <RiRadioButtonFill />
+          </div>
+        ))}
+      </div>
+    </m.div>
+  );
+}
+
 
 export default Gallery;

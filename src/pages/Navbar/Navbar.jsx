@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa'
 import logo from '../../images/casasr.png'
 import { Link } from 'react-scroll'
-import './Navbar.css';
+/* import './Navbar.css'; */
 
 
 function NavigationBar () {
@@ -13,9 +13,9 @@ function NavigationBar () {
 
     return (
         <section className='header'>
-            <nav className='navbar'>
+            {/* <nav className='navbar'>
                 <a href='/' className='logo'>
-                    {/* <p className='logo-text'>Casa do Sr. Paulo</p> */}
+     
                     <img src={logo} className='logo-casa' alt='logo representing the house silhouette'/>
                 </a>
                 <div className='hamburger' onClick={handleClick}>
@@ -43,7 +43,7 @@ function NavigationBar () {
                         <Link to="history" spy={true} smooth={true} offset={50} duration={50} onClick={closeMenu}>History</Link>
                     </li>
                 </ul>
-            </nav>
+            </nav> */}
         </section>
         
     );
