@@ -49,14 +49,14 @@ const HouseContentCard = ({ index, name }) => {
   }
 
   return (
-    <div className="xs:w-[20px] w-[220px] border-4 border-[#827e3c] rounded-full bg-[#DAD15F]">
+    <div className="xs:w-[150px] w-full border-4 rounded-full border-tertiary">
       <m.div
         variants={fadeInVariant("right", "spring", index * 0.2, 0.2)}
-        className="w-full p-[1px] rounded-full"
+        className="w-full rounded-full bg-tertiary"
       >
-        <div className="bg-tertiary bg-opacity-20 py-8 px-12 min-h-[150px] flex justify-evenly items-center flex-col rounded-full">
-          <IconComponent className="w-16 h-16 text-black" />
-          <h3 className="text-black text-[20px] font-bold text-center">{name}</h3>
+        <div className="bg-tertiary rounded-full py-6 px-12 min-h-[150px] flex justify-evenly items-center flex-col">
+          <IconComponent className="w-12 h-12 text-black" />
+          <h3 className="text-white text-[16px] font-bold text-center">{name}</h3>
         </div>
       </m.div>
     </div>

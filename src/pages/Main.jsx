@@ -10,6 +10,7 @@ import Footer from '../pages/Footer/Footer';
 import { GalleryData } from '../pages/Gallery/Gallery-Data';
 import './Main.css';
 import HouseContent from './HouseContent/HouseContent';
+import Feedback from './Feedback/Feedback';
 
 function Main() {
   return (
@@ -20,9 +21,10 @@ function Main() {
         <HouseContent />
         <References/>
         <Gallery slides={GalleryData}/>
+        <Feedback />
         {/* <History /> */}
-        {/* <Footer/> */}
         <Contact />
+        <Footer/>
     </section>
   )
 }

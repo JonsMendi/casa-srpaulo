@@ -51,10 +51,46 @@ export const containerVariants = {
   },
 };
 
+export const buttonVariants = {
+  rest: {
+    backgroundColor: "rgba(0,0,0, 0.2)",
+    color: "#fff",
+    scale: 1,
+  },
+  hover: {
+    backgroundColor: "rgba(0,0,0, 0.2)",
+    color: "#000",
+    scale: 1.1,
+  },
+  tap: {
+    backgroundColor: "rgba(0,0,0, 0.2)",
+    color: "#fff",
+    scale: 0.9,
+  },
+};
+
+export const entranceVariant = {
+  hidden: {
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+    transition: {
+      delay: 0.4,
+      duration: 1,
+      ease: "easeOut",
+    },
+  },
+};
+
+
 const motionVariants = {
   titleVariant,
   fadeInVariant,
   containerVariants,
+  buttonVariants,
+  entranceVariant
 };
+
 
 export default motionVariants;
