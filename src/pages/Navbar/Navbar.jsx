@@ -2,7 +2,7 @@
 import { FaBars, FaTimes } from 'react-icons/fa'
 import logo from '../../images/casasr.png'
 import { Link } from 'react-scroll' */
-/* import './Navbar.css'; */
+
 
 
 function NavigationBar () {
