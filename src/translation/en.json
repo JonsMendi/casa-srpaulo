@@ -1,0 +1,104 @@
+{
+  "home": {
+    "title": "Mr. Paulo House",
+    "subtitle": "Embrace nature in the heart of Nordeste, Azores",
+    "book": "Book"
+  },
+  "about": {
+    "title": "About.",
+    "subtitle": "Introduction",
+    "What_are_we": {
+      "title": "What are we?",
+      "description": "We are a family-run guest house in Nordeste, São Miguel, originally built in the 1960s by Paulo Borges and Filomena Teixeira - a humble couple who made a living through agriculture and sewing always trying developing the house regarding the modern days. Today, their legacy lives on through our guest house, which offers a unique and peaceful retreat surrounded by nature."
+    },
+    "What_we_offer": {
+      "title": "What we offer?",
+      "description": "A range of amenities and services to ensure that our guests have a comfortable and enjoyable stay. From 3 cozy rooms with 2 persons bed each, fully equipped kitchen, 2 bathrooms and a cute living room with dining area. We have outdoor spaces, breathtaking views, and everything you need to make your visit to the Azores unforgettable."
+    },
+    "Why_us": {
+      "title": "Why us?",
+      "description": "At Casa do Sr.Paulo, we pride ourselves on providing a warm and welcoming atmosphere that feels like home. With a focus on authenticity and simplicity, we offer a unique experience that allows our guests to truly connect with nature and disconnect from the stresses of everyday life. Plus, our location in Nordeste is one of the most beautiful and unspoiled areas of S.Miguel island, making it the perfect place to explore and discover the magic of the Azores."
+    }
+  },
+  "content": {
+    "title": "Content.",
+    "subtitle": "The House",
+    "Wi-fi": "Wi-fi",
+    "Remote work": "Remote work",
+    "Kitchen": "Kitchen",
+    "TV by cable": "TV by cable",
+    "Car Parking": "Car Parking",
+    "Washing Machine": "Washing Machine",
+    "Microwave": "Microwave",
+    "Garden": "Garden",
+    "Barbecue": "Barbecue",
+    "Mountain view": "Mountain view",
+    "Sea view": "Sea view"
+  },
+  "nordeste": {
+    "title": "Nordeste.",
+    "subtitle": "What to do in",
+    "activities": {
+      "title": "Activities", 
+      "description": "Nordeste is a beautiful municipality located on the northeastern coast of São Miguel Island in the Azores. It is known for its breathtaking natural beauty, charming small towns, and rich cultural heritage. Activities such as hiking and swimming are very popular. Click below to discover more.",
+      "description1": "One of the most popular activities to do in Nordeste is hiking. There are several trails that wind through the lush green hills and forests, offering stunning views of the coastline and the Atlantic Ocean. The Serra da Tronqueira, Lomba D'El Rei and Salto da Farinha trail is a particularly scenic option. Never forget the Pico da Vara trail, the highest mountain in S. Miguel. Also, try to not let pass the opportunity to watch one of the best sunrises of your life in Miradouro da Ponta da Madrugada. Used to be a very common activity for locals, starting with a barbecue in the place, and staying overnight to watch the sun rising. But if you are a hiking lover, keep the following website in your pocket:",
+      "description2": "For those who enjoy water sports, Nordeste also offers some great options. You can go swimming in the natural pools of Ribeira do Guilherme or surfing in some of the nearby beaches, such as Praia do Lombo Gordo. Be aware that this particular beach becomes without sun after 4pm regarding the high coast. Choose a sunny day, prepare some sandwiches, go around 10am, and enjoy the Praia do Lombo Gordo and is natural surroundings. Also, in recent years canyoning became very popular sport to enjoy the beautiful creeks around.",
+      "description3": "Overall, Nordeste is a wonderful destination for nature lovers, adventure seekers, and culture enthusiasts alike. With its stunning natural beauty and rich cultural heritage, there is something for everyone to enjoy in this charming municipality."
+    },
+    "gastronomy": {
+      "title": "Gastronomy",
+      "description": "The food was always the center of the attention of the families in Nordeste. This municipality that once was mostly populated by farmers and agricultores have a very reach gastronomy history that unfortunitely as been fading slowly over the years. Click under to discover more.",
+      "description1": "One of the most popular activities to do in Nordeste is hiking. There are several trails that wind through the lush green hills and forests, offering stunning views of the coastline and the Atlantic Ocean. The Serra da Tronqueira, Lomba D'El Rei and Salto da Farinha trail is a particularly scenic option. Never forget the Pico da Vara trail, the highest mountain in S. Miguel. Also, try to not let pass the opportunity to watch one of the best sunrises of your life in Miradouro da Ponta da Madrugada. Used to be a very common activity for locals, starting with a barbecue in the place, and staying overnight to watch the sun rising. But if you are a hiking lover, keep the following website in your pocket:",
+      "description2": "For those who enjoy water sports, Nordeste also offers some great options. You can go swimming in the natural pools of Ribeira do Guilherme or surfing in some of the nearby beaches, such as Praia do Lombo Gordo. Be aware that this particular beach becomes without sun after 4pm regarding the high coast. Choose a sunny day, prepare some sandwiches, go around 10am, and enjoy the Praia do Lombo Gordo and is natural surroundings. Also, in recent years canyoning became very popular sport to enjoy the beautiful creeks around.",
+      "description3": "Overall, Nordeste is a wonderful destination for nature lovers, adventure seekers, and culture enthusiasts alike. With its stunning natural beauty and rich cultural heritage, there is something for everyone to enjoy in this charming municipality."
+    },
+    "attractions": {
+      "title": "Attractions",
+      "description": "Nordeste is a small municipality full of history to have a look at. From Parque da Ribeira dos Caldeirões to the eldery people that love to share their histories (knowing portuguese is always a plus!). Click under to discover more.",
+      "description1": "One of Nordeste's top attractions is Parque Natural da Ribeira dos Caldeirões, a beautiful park with waterfalls, hiking trails, and natural pools for swimming.",
+      "description2": "Another must-see landmark is the Farol da Ponta do Arnel lighthouse, built in 1876 and offering stunning views of the coastline and Atlantic Ocean. The town of Nordeste has several fascinating museums and churches, including the Museum of Sacred Art with its collection of religious artifacts, and the Church of Nossa Senhora da Conceição with its beautiful baroque architecture.",
+      "description3": "Overall, Nordeste is a wonderful destination for nature lovers, history buffs, and adventure seekers alike. With its stunning natural beauty, rich cultural heritage, and many outdoor activities, there is something for everyone to enjoy in this charming municipality."
+    }
+  },
+  "feedback": {
+    "title": "Appreciation.",
+    "subtitle": "What others say",
+    "testimonials": {
+      "t1": "Great host and beautiful accomodation. We would definitely stay there again. Really recommend this one!",
+      "t2": "Very good place for a family, all the necessary equipment is there and works perfectly well, lots of things to visit in the area, the house is perfectly clean!",
+      "t3": "Easy to find house, kindness of the hosts, house equipped with everything needed for the intended stay, basic services relatively close, quiet and safe place and the wonders of the Northeast of the Azores right next door :-)",
+      "t4": "Very beautiful and large house. Very nice welcome. Very nice garden and barbecue area. Don't be afraid of the distances for this house which is close to Nordeste (less than one hour to reach Sete Citades).",
+      "t5": "We stayed there from 09/08/2019 - 09/19/2019. If you are looking for a quiet, relaxing home, it is really just the right place! We enjoyed the coffee at the barbecue area every day overlooking the sea. The amenities are basic, but there's everything you need. It makes you feel right at home. Alberto himself is a very eager host who also has great suggestions for your activities! I would come back in a heartbeat!!",
+      "t6": "Very good place for a family, all the necessary equipment is there and works perfectly well, lots of things to visit in the area, the house is perfectly clean!",
+      "t7": "The house is a treat. Located in a very quiet area, with traces of traditional Azorean architecture. The whole house was very clean and organized, with all amenities. It is important to mention that the fact of having private parking is a plus, as well as the well kept outdoor space. We were received with great warmth by Mr. Milton, who presented us with some local delicacies."
+    },
+    "countries": {
+      "czech_republic": "Czech Republic",
+      "portugal": "Portugal",
+      "france": "France",
+      "germany": "Germany"
+    }
+  },
+  "contact": {
+    "title": "Book it now.",
+    "subtitle": "Interested?",
+    "what_name": "What's your name?",
+    "what_mail": "What's your email?",
+    "what_message": "What's your message?",
+    "placeholder_name": "Your name",
+    "placeholder_mail": "your.name@mail.com",
+    "placeholder_message": "Type here your message",
+    "send": "Send",
+    "address": "Address",
+    "others": "Other Booking alternatives"
+  },
+  "navbar": {
+    "logo": "Your Logo",
+    "switch_to_pt": "Mudar para PT",
+    "switch_to_en": "Switch to EN",
+    "book": "Book",
+    "top": "Top"
+  }
+}
+
+

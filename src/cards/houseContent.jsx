@@ -7,9 +7,12 @@ import { FiMonitor } from "react-icons/fi";
 import { IoCar } from "react-icons/io5";
 import { GiWashingMachine, GiBarbecue } from "react-icons/gi";
 import { MdOutlineMicrowave } from "react-icons/md";
+import { useTranslation } from "react-i18next";
 
 const HouseContentCard = ({ index, name }) => {
+  const { t } = useTranslation();
   let IconComponent;
+
   switch (name) {
     case "Wi-fi":
       IconComponent = FaWifi;
@@ -56,7 +59,7 @@ const HouseContentCard = ({ index, name }) => {
       >
         <div className="bg-tertiary rounded-full py-6 px-12 min-h-[150px] flex justify-evenly items-center flex-col">
           <IconComponent className="w-12 h-12 text-black" />
-          <h3 className="text-white text-[16px] font-bold text-center">{name}</h3>
+          <h3 className="text-white text-[15px] font-bold text-center">{t(`content.${name}`)}</h3>
         </div>
       </m.div>
     </div>

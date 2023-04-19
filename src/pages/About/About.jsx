@@ -2,8 +2,10 @@ import React from "react";
 import { motion as m } from "framer-motion";
 import { titleVariant } from "../../utilities/motion-framer";
 import { styles } from "../../utilities/style";
+import { useTranslation } from "react-i18next";
 
 function About () {
+  const { t } = useTranslation();
 
     return (
       <m.section
@@ -21,44 +23,31 @@ function About () {
             className="flex flex-col items-start"
           >
             <p className={`${styles.sectionSubText} text-center`}>
-              Introduction
+            {t("about.subtitle")}
             </p>
-            <h2 className={`${styles.sectionHeadText} text-center`}>About.</h2>
+            <h2 className={`${styles.sectionHeadText} text-center`}>{t("about.title")}</h2>
           </m.div>
           <div className="flex">
             <m.div
                 variants={titleVariant()}
                 className="mt-4 mr-4 text-secondary text-[17px] max-w-3xl leading-[30px] flex-1"
             >
-                <span className="font-bold">What are we? </span>
-                We are a family-run guest house in Nordeste, São Miguel, 
-                originally built in the 1960s by Paulo Borges and Filomena Teixeira - a humble couple who made 
-                a living through agriculture and sewing always trying developing the house regarding the modern days. Today, their legacy lives on through our guest house, 
-                which offers a unique and peaceful retreat surrounded by nature.
+                <span className="font-bold">{t("about.What_are_we.title")} </span>
+                {t("about.What_are_we.description")}
             </m.div>
             <m.div
                 variants={titleVariant()}
                 className="mt-4 mr-4 text-secondary text-[17px] max-w-3xl leading-[30px] flex-1"
             >
-                <span className="font-bold">What we offer? </span>
-                A range of amenities and services to ensure that our guests
-                have a comfortable and enjoyable stay. From 3 cozy rooms with 2 persons bed each, fully
-                equipped kitchen, 2 bathrooms and a cute living room with dining area. We have outdoor spaces, breathtaking views, and
-                everything you need to make your visit to the Azores unforgettable.
+                <span className="font-bold">{t("about.What_we_offer.title")} </span>
+                {t("about.What_we_offer.description")}
             </m.div>
             <m.div
                 variants={titleVariant()}
                 className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] flex-1"
             >
-                <span className="font-bold">Why us? </span>
-                At Casa do Sr.Paulo, we pride ourselves on providing a warm and
-                welcoming atmosphere that feels like home. With a focus on
-                authenticity and simplicity, we offer a unique experience that
-                allows our guests to truly connect with nature and disconnect from
-                the stresses of everyday life. Plus, our location in Nordeste is one
-                of the most beautiful and unspoiled areas of S.Miguel island,
-                making it the perfect place to explore and discover the magic of the
-                Azores.
+                <span className="font-bold">{t("about.Why_us.title")} </span>
+                {t("about.Why_us.description")}
             </m.div>
           </div>
           

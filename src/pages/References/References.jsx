@@ -4,10 +4,11 @@ import {useNavigate} from 'react-router';
 import { motion as m } from "framer-motion";
 import { titleVariant } from "../../utilities/motion-framer";
 import { styles } from "../../utilities/style";
+import { useTranslation } from "react-i18next";
 
 function References  ()  {
     const navigator = useNavigate();
-
+    const { t } = useTranslation();
 
     return (
       <m.section
@@ -25,10 +26,10 @@ function References  ()  {
             className="flex flex-col items-start"
           >
             <p className={`${styles.sectionSubText} text-center`}>
-              What to do in
+              {t("nordeste.subtitle")}
             </p>
             <h2 className={`${styles.sectionHeadText} text-center`}>
-              Nordeste.
+              {t("nordeste.title")}
             </h2>
           </m.div>
           <div className="flex">
@@ -38,12 +39,8 @@ function References  ()  {
             >
               <div className="flex flex-column items-center">
                 <div className="text-edit">
-                  <span className="font-bold">Activities: </span>
-                  Nordeste is a beautiful municipality located on the northeastern coast
-                  of São Miguel Island in the Azores. It is known for
-                  its breathtaking natural beauty, charming small towns, and rich
-                  cultural heritage. Activities such as hiking and swimming are very
-                  popular. Click below to discover more.
+                  <span className="font-bold">{t("nordeste.activities.title")}: </span>
+                  {t("nordeste.activities.description")}
                 </div>
                 <div>
                   <AiOutlinePlusCircle
@@ -62,12 +59,8 @@ function References  ()  {
             >
               <div className="flex flex-column items-center">
                 <div className="text-edit">
-                  <span className="font-bold">Gastronomy: </span>
-                  The food was always
-                  the center of the attention of the families in Nordeste. This
-                  municipality that once was mostly populated by farmers and
-                  agricultores have a very reach gastronomy history that unfortunitely
-                  as been fading slowly over the years. Click under to discover more.
+                  <span className="font-bold">{t("nordeste.gastronomy.title")}: </span>
+                  {t("nordeste.gastronomy.description")}
                 </div>
                 <div>
                   <AiOutlinePlusCircle
@@ -86,11 +79,8 @@ function References  ()  {
             >
               <div className="flex flex-column items-center">
                 <div className="text-edit">
-                  <span className="font-bold">Attractions: </span>
-                  Nordeste is a small municipality full of history to have a look
-                  at. From Parque da Ribeira dos Caldeirões to the eldery people
-                  that love to share their histories (knowing portuguese is always
-                  a plus!). Click under to discover more.
+                  <span className="font-bold">{t("nordeste.attractions.title")}: </span>
+                  {t("nordeste.attractions.description")}
                 </div>
                 <div>
                   <AiOutlinePlusCircle

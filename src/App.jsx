@@ -2,7 +2,6 @@ import './App.css';
 import React from "react";
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import ErrorPage from './pages/ErrorPage/Error-Page';
-import NavigationBar from './pages/Navbar/Navbar';
 import Activities from './pages/References/Activities/Activities';
 import Main from './pages/Main';
 import Attractions from './pages/References/Attractions/Attractions';
@@ -17,7 +16,6 @@ function App() {
     <section className='app-container'>
       <div className='app-div-wrapper'>
         <Router>
-          <NavigationBar/>
       {/* Routes defined under. Important to remember that default path ('/') need to be in the top and ('*') in the bottom*/}
           <Routes>
             {/* Under, use process.env.PUBLIC_URL in route definitions so that they work both in development and after deployment.*/}

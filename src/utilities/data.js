@@ -55,52 +55,45 @@ const GalleryData = [
 
 const testimonials = [
   {
-    testimonial:
-      "Great host and beautiful accomodation. We would definitely stay there again. Really recommend this one!",
+    translationKey: "t1",
     name: "Kristina",
-    country: "Czech Republic",
+    countryKey: "czech_republic",
     platform: "Booking.com"
   },
   {
-    testimonial:
-      "Very good place for a family, all the necessary equipment is there and works perfectly well, lots of things to visit in the area, the house is perfectly clean!",
+    translationKey: "t2",
     name: "Madalena",
-    country: "Portugal",
+    countryKey: "portugal",
     platform: "Booking.com"
   },
   {
-    testimonial:
-      "Easy to find house, kindness of the hosts, house equipped with everything needed for the intended stay, basic services relatively close, quiet and safe place and the wonders of the Northeast of the Azores right next door :-",
+    translationKey: "t3",
     name: "Hugo",
-    country: "Portugal",
+    countryKey: "portugal",
     platform: "Booking.com"
   },
   {
-    testimonial:
-      "Very beautiful and large house. Very nice welcome. Very nice garden and barbecue area. Don't be afraid of the distances for this house which is close to Nordeste (less than one hour to reach Sete Citades).",
+    translationKey: "t4",
     name: "Guy",
-    country: "France",
+    countryKey: "france",
     platform: "Airbnb"
   },
   {
-    testimonial:
-      "We stayed there from 09/08/2019 - 09/19/2019. If you are looking for a quiet, relaxing home, it is really just the right place! We enjoyed the coffee at the barbecue area every day overlooking the sea. The amenities are basic, but there's everything you need. It makes you feel right at home. Alberto himself is a very eager host who also has great suggestions for your activities! I would come back in a heartbeat!!",
+    translationKey: "t5",
     name: "Manuela",
-    country: "Germany",
+    countryKey: "germany",
     platform: "Airbnb"
   },
   {
-    testimonial:
-      "Very good place for a family, all the necessary equipment is there and works perfectly well, lots of things to visit in the area, the house is perfectly clean!",
+    translationKey: "t6",
     name: "Nicolas",
-    country: "France",
+    countryKey: "france",
     platform: "Airbnb"
   },
   {
-    testimonial:
-      "The house is a treat. Located in a very quiet area, with traces of traditional Azorean architecture. The whole house was very clean and organized, with all amenities. It is important to mention that the fact of having private parking is a plus, as well as the well kept outdoor space. We were received with great warmth by Mr. Milton, who presented us with some local delicacies",
+    translationKey: "t7",
     name: "Helena",
-    country: "Portugal",
+    countryKey: "portugal",
     platform: "Airbnb"
   },
 ];

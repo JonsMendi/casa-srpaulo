@@ -1,53 +1,69 @@
-/* import React, { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa'
-import logo from '../../images/casasr.png'
-import { Link } from 'react-scroll' */
+import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import { Link } from 'react-scroll';
+import { GrLanguage } from 'react-icons/gr';
+import { AiOutlineHome, AiOutlineCheck, AiOutlineGlobal } from 'react-icons/ai';
 
 
+const Navbar = () => {
+  const { t, i18n } = useTranslation();
+  const [language, setLanguage] = useState(i18n.language);
+  const [bgColor, setBgColor] = useState('bg-transparent');
 
-function NavigationBar () {
-    /* const [click, setClick] = useState(false) */
+  useEffect(() => {
+    const handleScroll = () => {
+      const secondSection = document.getElementById('about');
+      const secondSectionOffsetTop = secondSection.offsetTop;
 
-    /* const handleClick = () => setClick(!click)
-    const closeMenu = () => setClick(false) */
+      if (window.pageYOffset >= secondSectionOffsetTop) {
+        setBgColor('backdrop-filter backdrop-blur-[7px]');
+      } else {
+        setBgColor('bg-transparent');
+      }
+    };
 
-    return (
-        <section className='header'>
-            {/* <nav className='navbar'>
-                <a href='/' className='logo'>
-     
-                    <img src={logo} className='logo-casa' alt='logo representing the house silhouette'/>
-                </a>
-                <div className='hamburger' onClick={handleClick}>
-                    {click ? (<FaTimes size={30} className='hamburger-detail' />)
-                        : (<FaBars size={30} className='hamburger-detail' />)}
+    window.addEventListener('scroll', handleScroll);
 
-                </div>
-                <ul className={click ? "nav-menu active" : "nav-menu"}>
-                    <li className='nav-item'>
-                        <Link to="home" spy={true} smooth={true} offset={0} duration={50} onClick={closeMenu}>Home</Link>
-                    </li>
-                    <li className='nav-item'>
-                        <Link to="about" spy={true} smooth={true} offset={50} duration={50} onClick={closeMenu}>About</Link>
-                    </li>
-                    <li className='nav-item'>
-                        <Link to="contact" spy={true} smooth={true} offset={50} duration={50} onClick={closeMenu}>Contact</Link>
-                    </li>
-                    <li className='nav-item'>
-                        <Link to="references" spy={true} smooth={true} offset={50} duration={50} onClick={closeMenu}>References</Link>
-                    </li>
-                    <li className='nav-item'>
-                        <Link to="gallery" spy={true} smooth={true} offset={10} duration={50} onClick={closeMenu}>Gallery</Link>
-                    </li>
-                    <li className='nav-item'>
-                        <Link to="history" spy={true} smooth={true} offset={50} duration={50} onClick={closeMenu}>History</Link>
-                    </li>
-                </ul>
-            </nav> */}
-        </section>
-        
-    );
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    setLanguage(lng);
+  };
+
+  return (
+    <nav className={`fixed w-full top-0 p-2 flex justify-between items-center transition-all duration-300 ease-in-out z-10 ${bgColor}`}>
+      <div>
+        {/* <a href="/" className="text-white font-bold text-xl">
+          {t('navbar.logo')}
+        </a> */}
+      </div>
+      <div className="flex items-center space-x-4">
+        <Link to="home" smooth={true} duration={500}>
+          <button className="px-2 flex items-center font-bold">
+            <AiOutlineHome className="mr-1" />
+            {t('navbar.top')}
+          </button>
+        </Link>
+        <Link to="contact" smooth={true} duration={500}>
+          <button className="px-2 flex items-center font-bold">
+            <AiOutlineCheck className="mr-1" />
+            {t('navbar.book')}
+          </button>
+        </Link>
+        <button
+          className="px-2 flex items-center font-bold"
+          onClick={() => changeLanguage(language === 'en' ? 'pt' : 'en')}
+        >
+          <AiOutlineGlobal className="mr-1" />
+          {language === 'en' ? t('navbar.switch_to_pt') : t('navbar.switch_to_en')}
+        </button>
+      </div>
+    </nav>
+  );
 };
 
-
-export default NavigationBar;
+export default Navbar;

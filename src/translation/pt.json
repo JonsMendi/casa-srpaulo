@@ -1,0 +1,105 @@
+{
+  "home": {
+    "title": "Casa do Sr. Paulo",
+    "subtitle": "Abrace a natureza no coração do Nordeste, Açores",
+    "book": "Reservar"
+  },
+  "about": {
+    "title": "Sobre.",
+    "subtitle": "Introdução",
+    "What_are_we": {
+      "title": "Quem somos?", 
+      "description": "Somos uma casa de hóspedes familiar no Nordeste, São Miguel, originalmente construída nos anos 60 por Paulo Borges e Filomena Teixeira - um humilde casal que ganhava a vida através da agricultura e da costura, tentando sempre desenvolver a casa em relação aos tempos modernos. Hoje, o seu legado continua vivo através da nossa casa de hóspedes, que oferece um retiro único e pacífico rodeado pela natureza."
+    },
+    "What_we_offer": {
+      "title": "O que oferecemos?",
+      "description": "Uma gama de comodidades e serviços para assegurar que os nossos hóspedes tenham uma estadia confortável e agradável. A partir de 3 quartos acolhedores com cama para 2 pessoas cada, cozinha totalmente equipada, 2 casas de banho e uma bonita sala de estar com zona de jantar. Temos espaços exteriores, vistas deslumbrantes, e tudo o que necessita para tornar a sua visita aos Açores inesquecível."
+    },
+    "Why_us": {
+      "title": "Porquê nós?",
+      "description": "Na Casa do Sr.Paulo, orgulhamo-nos de proporcionar uma atmosfera calorosa e acolhedora que nos faz sentir como em casa. Com um enfoque na autenticidade e simplicidade, oferecemos uma experiência única que permite aos nossos hóspedes ligarem-se verdadeiramente à natureza e desligarem-se do stress da vida quotidiana. Além disso, a nossa localização no Nordeste é uma das zonas mais belas e intocadas da ilha de S.Miguel, tornando-a no local perfeito para explorar e descobrir a magia dos Açores."
+    }
+  },
+  "content": {
+    "title": "Conteúdo.",
+    "subtitle": "Da Casa",
+    "Wi-fi": "Wi-fi",
+    "Remote work": "Trabalho Remoto",
+    "Kitchen": "Cozinha",
+    "TV by cable": "TV por cabo",
+    "Car Parking": "Estacionamento",
+    "Washing Machine": "Maquina de lavar",
+    "Microwave": "Microondas",
+    "Garden": "Jardim",
+    "Barbecue": "Churrasqueira",
+    "Mountain view": "Vista para Montanha",
+    "Sea view": "Vista para Mar"
+  },
+  "nordeste": {
+    "title": "Nordeste.",
+    "subtitle": "O que fazer",
+    "activities": {
+      "title": "Actividades", 
+      "description": "Nordeste é um belo município localizado na costa nordeste da Ilha de São Miguel, nos Açores. É conhecido pela sua deslumbrante beleza natural, pequenas cidades encantadoras, e rico património cultural. Actividades como caminhadas e natação são muito populares. Clique abaixo para descobrir mais.",
+      "description1": "Uma das actividades mais populares a fazer no Nordeste é a caminhada. Há vários trilhos que serpenteiam através das colinas e florestas verdejantes, oferecendo vistas deslumbrantes da costa e do Oceano Atlântico. O trilho da Serra da Tronqueira, Lomba D'El Rei e Salto da Farinha é uma opção particularmente cénica. Nunca esquecer o trilho do Pico da Vara, a montanha mais alta de S. Miguel. Tente também não deixar passar a oportunidade de ver um dos melhores amanheceres da sua vida em Miradouro da Ponta da Madrugada. Costumava ser uma actividade muito comum para os habitantes locais, começando com um churrasco no local, e passando a noite a ver o nascer do sol. Mas se for um amante de caminhadas, mantenha o seguinte website no seu bolso:",
+      "description2": "Para aqueles que gostam de desportos aquáticos, Nordeste também oferece algumas grandes opções. Pode ir nadar nas piscinas naturais da Ribeira do Guilherme ou fazer surf em algumas das praias próximas, como a Praia do Lombo Gordo. Tenha em atenção que esta praia em particular fica sem sol depois das 16h em relação à costa alta. Escolha um dia de sol, prepare alguns sanduíches, vá por volta das 10h00, e desfrute da Praia do Lombo Gordo e é um ambiente natural. Além disso, nos últimos anos, o canyoning tornou-se um desporto muito popular para desfrutar dos belos riachos em redor.",
+      "description3": "Globalmente, Nordeste é um destino maravilhoso para os amantes da natureza, aventureiros, e entusiastas da cultura. Com a sua beleza natural deslumbrante e o seu rico património cultural, há algo para todos desfrutarem neste encantador município."
+    },
+    "gastronomy": {
+      "title": "Gastronomia",
+      "description": "A comida foi sempre o centro das atenções das famílias no Nordeste. Este concelho que outrora foi maioritariamente povoado por agricultores e camponeses tem uma história gastronómica de grande alcance que infelizmente tem vindo a desvanecer-se lentamente ao longo dos anos. Clique em baixo para descobrir mais.",
+      "description1": "One of the most popular activities to do in Nordeste is hiking. There are several trails that wind through the lush green hills and forests, offering stunning views of the coastline and the Atlantic Ocean. The Serra da Tronqueira, Lomba D'El Rei and Salto da Farinha trail is a particularly scenic option. Never forget the Pico da Vara trail, the highest mountain in S. Miguel. Also, try to not let pass the opportunity to watch one of the best sunrises of your life in Miradouro da Ponta da Madrugada. Used to be a very common activity for locals, starting with a barbecue in the place, and staying overnight to watch the sun rising. But if you are a hiking lover, keep the following website in your pocket:",
+      "description2": "For those who enjoy water sports, Nordeste also offers some great options. You can go swimming in the natural pools of Ribeira do Guilherme or surfing in some of the nearby beaches, such as Praia do Lombo Gordo. Be aware that this particular beach becomes without sun after 4pm regarding the high coast. Choose a sunny day, prepare some sandwiches, go around 10am, and enjoy the Praia do Lombo Gordo and is natural surroundings. Also, in recent years canyoning became very popular sport to enjoy the beautiful creeks around.",
+      "description3": "Overall, Nordeste is a wonderful destination for nature lovers, adventure seekers, and culture enthusiasts alike. With its stunning natural beauty and rich cultural heritage, there is something for everyone to enjoy in this charming municipality."
+    },
+    "attractions": {
+      "title": "Atracções",
+      "description": "Nordeste é um pequeno município cheio de história para dar uma vista de olhos. Do Parque da Ribeira dos Caldeirões aos anciãos que gostam de partilhar as suas histórias (saber português é sempre uma vantagem!). Clique em baixo para descobrir mais.",
+      "description1": "One of Nordeste's top attractions is Parque Natural da Ribeira dos Caldeirões, a beautiful park with waterfalls, hiking trails, and natural pools for swimming.",
+      "description2": "Another must-see landmark is the Farol da Ponta do Arnel lighthouse, built in 1876 and offering stunning views of the coastline and Atlantic Ocean. The town of Nordeste has several fascinating museums and churches, including the Museum of Sacred Art with its collection of religious artifacts, and the Church of Nossa Senhora da Conceição with its beautiful baroque architecture.",
+      "description3": "Overall, Nordeste is a wonderful destination for nature lovers, history buffs, and adventure seekers alike. With its stunning natural beauty, rich cultural heritage, and many outdoor activities, there is something for everyone to enjoy in this charming municipality."
+    }
+  },
+  "feedback": {
+    "title": "Apreciação.",
+    "subtitle": "O que dizem",
+    "testimonials": {
+      "t1": "Grande anfitrião e belo alojamento. Sem dúvida que lá ficaríamos novamente. Recomendo vivamente este aqui!",
+      "t2": "Muito bom lugar para uma família, todo o equipamento necessário está lá e funciona perfeitamente, muitas coisas para visitar na área, a casa está perfeitamente limpa!",
+      "t3": "Casa fácil de encontrar, amabilidade dos anfitriões, casa equipada com tudo o que é necessário para a estadia pretendida, serviços básicos relativamente próximos, lugar calmo e seguro e as maravilhas do Nordeste dos Açores mesmo aqui ao lado :-)",
+      "t4": "Casa muito bonita e grande. Muito bem-vinda. Muito bonito jardim e zona de barbecue. Não tenha medo das distâncias para esta casa que fica perto do Nordeste (menos de uma hora para chegar a Sete Citades).",
+      "t5": "Ficámos lá de 08/09/2019 - 19/09/2019. Se está à procura de uma casa calma e relaxante, é realmente o lugar certo! Gostámos do café na zona do churrasco todos os dias, com vista para o mar. As comodidades são básicas, mas há tudo o que precisa. Faz-nos sentir bem em casa. O próprio Alberto é um anfitrião muito ansioso que também tem grandes sugestões para as suas actividades! Eu voltaria num piscar de olhos!!",
+      "t6": "Muito bom lugar para uma família, todo o equipamento necessário está lá e funciona perfeitamente, muitas coisas para visitar na zona, a casa está perfeitamente limpa",
+      "t7": "A casa é um doce. Localizada numa zona muito calma, com vestígios da arquitectura tradicional açoriana. Toda a casa era muito limpa e organizada, com todas as comodidades. É importante mencionar que o facto de ter estacionamento privado é uma vantagem, assim como o espaço bem conservado ao ar livre. Fomos recebidos com grande calor pelo Sr. Milton, que nos presenteou com algumas iguarias locais."
+    },
+    "countries": {
+      "czech_republic": "República Checa",
+      "portugal": "Portugal",
+      "france": "França",
+      "germany": "Alemanha"
+    }
+  },
+  "contact": {
+    "title": "Reserve já.",
+    "subtitle": "Interessado?",
+    "what_name": "Qual o seu nome?",
+    "what_mail": "Qual o seu email?",
+    "what_message": "Qual a sua mensagem?",
+    "placeholder_name": "O seu nome",
+    "placeholder_mail": "o.seu.nome@mail.com",
+    "placeholder_message": "Escreva aqui a sua mensagem",
+    "send": "Enviar",
+    "address": "Morada",
+    "others": "Outras alternativas de reserva"
+  },
+  "navbar": {
+    "logo": "Your Logo",
+    "switch_to_pt": "Mudar para PT",
+    "switch_to_en": "Switch to EN",
+    "book": "Reserve",
+    "top": "Topo"
+  }
+}
+
+  
+

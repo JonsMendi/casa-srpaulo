@@ -2,7 +2,7 @@ import React from 'react';
 import Home from '../pages/Home/Home';
 import About from '../pages/About/About';
 import Contact from '../pages/Contact/Contact';
-import NavigationBar from '../pages/Navbar/Navbar';
+import Navbar from '../pages/Navbar/Navbar';
 /* import History from '../pages/History/History'; */
 import Gallery from '../pages/Gallery/Gallery';
 import References from '../pages/References/References';
@@ -15,7 +15,7 @@ import Feedback from './Feedback/Feedback';
 function Main() {
   return (
     <section className='main-container'>
-        <NavigationBar/>
+        <Navbar/>
         <Home />
         <About />
         <HouseContent />

@@ -4,9 +4,12 @@ import { entranceVariant } from "../../utilities/motion-framer";
 import { styles } from "../../utilities/style";
 import { Link } from "react-scroll";
 import "./Home.css";
+import { useTranslation } from "react-i18next";
 
 function Home() {
-  return (
+  const { t } = useTranslation();
+
+  return ( 
     <section className="home-container" id="home">
       <div className="home-content">
         <div className="all-content-wrapper"></div>
@@ -21,12 +24,12 @@ function Home() {
             <h1
               className={`${styles.sectionHeadText}font-heading text-center text-white`}
             >
-              Casa do Sr.Paulo
+              {t("home.title")}
             </h1>
             <p
               className={`${styles.sectionSubText} text-center text-[#94AB8A]`}
             >
-              Embrace Nature in the Heart of Nordeste, Azores
+              {t("home.subtitle")}
             </p>
           </m.div>
           <div className="button-wrapper mt-6 flex justify-center">
@@ -34,7 +37,7 @@ function Home() {
               <button 
                 className="bg-tertiary text-black px-6 py-3 font-semibold rounded- hover:bg-opacity-80 transition duration-300 ease-in-out hover:scale-105"
               >
-                  Book
+                {t("home.book")}
               </button>
             </Link>
           </div>

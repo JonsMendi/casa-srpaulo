@@ -4,10 +4,11 @@ import { motion as m } from "framer-motion";
 import { titleVariant } from "../../../utilities/motion-framer";
 import { BsChevronCompactLeft } from 'react-icons/bs';
 import { styles } from "../../../utilities/style";
-
+import { useTranslation } from "react-i18next";
 
 function Gastronomy() {
     const navigator = useNavigate();
+    const { t } = useTranslation();
 
     return (
         <div className="min-h-screen">
@@ -27,7 +28,7 @@ function Gastronomy() {
                 className="flex flex-col items-start"
               >
                 <h2 className={`${styles.sectionHeadText} text-center`}>
-                  Gastronomy.
+                {t("nordeste.gastronomy.title")}.
                 </h2>
               </m.div>
               <div className="flex">

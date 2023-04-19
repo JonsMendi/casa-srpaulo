@@ -2,12 +2,14 @@ import emailjs from 'emailjs-com';
 import React, { useState } from "react";
 import { TbBrandAirbnb, TbBrandBooking } from 'react-icons/tb';
 import { styles } from "../../utilities/style";
+import { useTranslation } from "react-i18next";
 
 
 const Contact = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const { t } = useTranslation();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -39,14 +41,14 @@ const Contact = () => {
         >
           <div className=" flex-[0.4] p-8  border-4 border-black rounded-[20px] ">
             <p className={`${styles.sectionSubText} text-tertiary`}>
-              Interested?
+            {t("contact.subtitle")}
             </p>
-            <h3 className={styles.sectionHeadText}>Book it now.</h3>
+            <h3 className={styles.sectionHeadText}>{t("contact.title")}</h3>
 
             <form onSubmit={handleSubmit} className="mt-12 flex flex-col gap-8">
               <label className="flex flex-col">
                 <span className="text-black text-xl mb-4">
-                  What&apos;s your name?
+                {t("contact.what_name")}
                 </span>
                 <input
                   type="text"
@@ -60,7 +62,7 @@ const Contact = () => {
 
               <label className="flex flex-col">
                 <span className="text-black text-xl mb-4">
-                  What&apos;s your email?
+                {t("contact.what_mail")}
                 </span>
                 <input
                   type="email"
@@ -74,7 +76,7 @@ const Contact = () => {
 
               <label className="flex flex-col">
                 <span className="text-black text-xl mb-4">
-                  What&apos;s your message?
+                {t("contact.what_message")}
                 </span>
                 <textarea
                   rows={7}
@@ -90,7 +92,7 @@ const Contact = () => {
                 type="submit"
                 className="bg-[#292d33] hover:border-primary py-3 px-8 rounded-xl text-white font-bold text-xl ease-in-out duration-200 transform hover:scale-90"
               >
-                Send
+                {t("contact.send")}
               </button>
             </form>
           </div>
@@ -100,7 +102,7 @@ const Contact = () => {
               <div className=" flex flex-col text-center mt-10 md:text-left">
 
                 <div className="mb-3">
-                  <h2 className="text-[35px] font-bold mb-2">Address</h2>
+                  <h2 className="text-[35px] font-bold mb-2">{t("contact.address")}</h2>
                   <p className="text-lg text-tertiary mb-2">
                     Estrada Regional nº 5, 9630-250 Nordestinho, Portugal
                   </p>
@@ -120,7 +122,7 @@ const Contact = () => {
                 
                 <div>
                   <h2 className="text-[35px] font-bold mb-2">
-                    Other Booking alternatives
+                  {t("contact.others")}
                   </h2>
                   <div className="flex flex-row items-center justify-center">
                     <a
