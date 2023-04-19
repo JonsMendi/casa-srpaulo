@@ -15,7 +15,7 @@ function Home() {
           animate="show"
           variants={entranceVariant}
           viewport={{ once: true, amount: 0.25 }}
-          className={`${styles.padding} max-w-7xl mx-auto relative z-0 mt-12 border-2 border-[#0B3B2D] backdrop-filter backdrop-blur-[2px] transition-all duration-1000 ease-out transform`}
+          className={`${styles.padding} max-w-7xl mx-auto relative z-0 mt-12 border-2 border-white backdrop-filter backdrop-blur-[3px]`}
         >
           <m.div>
             <h1
@@ -32,7 +32,7 @@ function Home() {
           <div className="button-wrapper mt-6 flex justify-center">
             <Link to="contact" spy={true} smooth={true} offset={100} duration={900}>
               <button 
-                className="bg-[#FFFF8F] text-black px-6 py-3 font-semibold rounded-lg hover:bg-opacity-80 transition duration-300 ease-in-out"
+                className="bg-tertiary text-black px-6 py-3 font-semibold rounded- hover:bg-opacity-80 transition duration-300 ease-in-out hover:scale-105"
               >
                   Book
               </button>
@@ -42,7 +42,7 @@ function Home() {
       </div>
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <Link to="about" spy={true} smooth={true} offset={10} duration={100}>
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-white flex justify-center items-start p-2 hover:cursor-pointer">
+          <div className="w-[35px] h-[64px]  border-4 border-white flex justify-center items-start p-2 hover:cursor-pointer">
             <m.div
               animate={{
                 y: [0, 25, 0],

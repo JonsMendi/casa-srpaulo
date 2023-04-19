@@ -31,9 +31,10 @@ function About () {
                 className="mt-4 mr-4 text-secondary text-[17px] max-w-3xl leading-[30px] flex-1"
             >
                 <span className="font-bold">What are we? </span>
-                A Guest House that offers a unique and
-                peaceful retreat in the heart of Nordeste. Surrounded by nature, our
-                house is the perfect place to unwind and recharge.
+                We are a family-run guest house in Nordeste, São Miguel, 
+                originally built in the 1960s by Paulo Borges and Filomena Teixeira - a humble couple who made 
+                a living through agriculture and sewing always trying developing the house regarding the modern days. Today, their legacy lives on through our guest house, 
+                which offers a unique and peaceful retreat surrounded by nature.
             </m.div>
             <m.div
                 variants={titleVariant()}
@@ -41,8 +42,8 @@ function About () {
             >
                 <span className="font-bold">What we offer? </span>
                 A range of amenities and services to ensure that our guests
-                have a comfortable and enjoyable stay. From cozy rooms and fully
-                equipped kitchens to outdoor spaces and breathtaking views, we have
+                have a comfortable and enjoyable stay. From 3 cozy rooms with 2 persons bed each, fully
+                equipped kitchen, 2 bathrooms and a cute living room with dining area. We have outdoor spaces, breathtaking views, and
                 everything you need to make your visit to the Azores unforgettable.
             </m.div>
             <m.div

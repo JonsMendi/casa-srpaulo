@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router';
 import { motion as m } from "framer-motion";
 import { titleVariant } from "../../../utilities/motion-framer";
+import { BsChevronCompactLeft } from 'react-icons/bs';
 import { styles } from "../../../utilities/style";
 
 
@@ -9,76 +10,64 @@ function Attractions() {
     const navigator = useNavigate();
 
     return (
-      <m.section
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0.25 }}
-        className={`${styles.padding} max-w-7xl mx-auto relative z-0 mt-20`}
-        id="references"
-      >
-        <div
-          className={` inset-0 top-[100px]  max-w-8xl mx-auto ${styles.paddingX} items-start gap-5`}
-        >
-          <m.div
-            variants={titleVariant()}
-            className="flex flex-col items-start"
+      <div className="min-h-screen">
+        <div className="flex flex-col justify-center items-center h-screen">
+          <m.section
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+            className={`${styles.padding} max-w-7xl mx-auto relative z-0 bg-white border-4 border-[#0B3B2D] rounded-[20px]`}
+            id="references"
           >
-            {/* <p className={`${styles.sectionSubText} text-center`}>
-              What to do in
-            </p> */}
-            <h2 className={`${styles.sectionHeadText} text-center`}>
-              Activities.
-            </h2>
-            <button onClick={() => navigator(-1)}>Back</button>
-          </m.div>
-          <div className="flex">
-            <m.div
-              variants={titleVariant()}
-              className="mt-4 mr-4 text-secondary text-[17px] max-w-3xl leading-[30px] flex-1"
+            <div
+              className={` inset-0 top-[100px]  max-w-8xl mx-auto ${styles.paddingX} items-start gap-5`}
             >
-              <p className="mb-4">
-                One of the top attractions in Nordeste is the Parque Natural da
-                Ribeira dos Caldeirões. This beautiful park features a series of
-                waterfalls and cascades, as well as lush green vegetation and
-                scenic hiking trails. Visitors can take a leisurely stroll
-                through the park, enjoy a picnic, or even take a dip in one of
-                the natural pools.
-              </p>
-              <p className="mb-4">
-                Another must-see attraction in Nordeste is the Farol da Ponta do
-                Arnel lighthouse. This historic lighthouse was built in 1876 and
-                is located on the easternmost point of São Miguel Island. It
-                offers stunning views of the coastline and the Atlantic Ocean,
-                and visitors can climb to the top for an even better view.
-              </p>
-              <p className="mb-4">
-                For those interested in history and culture, Nordeste has
-                several fascinating museums and churches to explore. The Museum
-                of Sacred Art is located in the historic town of Nordeste and
-                features an impressive collection of religious artifacts,
-                including paintings, sculptures, and vestments. The Church of
-                Nossa Senhora da Conceição is also worth a visit, with its
-                beautiful baroque architecture and stunning interior.
-              </p>
-              <p className="mb-4">
-                Finally, for those who love outdoor activities, Nordeste offers
-                plenty of options. In addition to hiking and exploring the
-                natural park, visitors can also go swimming, surfing, and scuba
-                diving in the nearby beaches. Fishing and whale watching tours
-                are also available, providing a unique opportunity to see these
-                majestic creatures up close.
-              </p>
-              <p>
-                Overall, Nordeste is a wonderful destination for nature lovers,
-                history buffs, and adventure seekers alike. With its stunning
-                natural beauty, rich cultural heritage, and many outdoor
-                activities, there is something for everyone to enjoy in this
-                charming municipality.
-              </p>
-            </m.div>
-          </div>
+              <m.div
+                variants={titleVariant()}
+                className="flex flex-col items-start"
+              >
+                <h2 className={`${styles.sectionHeadText} text-center`}>
+                  Attractions.
+                </h2>
+              </m.div>
+              <div className="flex">
+                <m.div
+                  variants={titleVariant()}
+                  className="mt-4 mr-4 text-secondary text-[17px] max-w-3xl leading-[30px] flex-1"
+                >
+                  <p className="mb-4">
+                  One of Nordeste's top attractions is Parque Natural da Ribeira dos Caldeirões, 
+                  a beautiful park with waterfalls, hiking trails, and natural pools for swimming.
+                  </p>
+                  <p className="mb-4">
+                  Another must-see landmark is the Farol da Ponta do Arnel lighthouse, 
+                  built in 1876 and offering stunning views of the coastline and Atlantic Ocean.
+                  </p>
+                  <p className="mb-4">
+                  The town of Nordeste has several fascinating museums and churches, 
+                  including the Museum of Sacred Art with its collection of religious artifacts, and the Church of Nossa Senhora da Conceição with its beautiful baroque architecture.
+                  </p>
+                  {/* <p className="mb-4">
+                    Finally, for those who love outdoor activities, Nordeste offers
+                    plenty of options. In addition to hiking and exploring the
+                    natural park, visitors can also go swimming in the nearby beaches or pools. 
+                  </p> */}
+                  <p>
+                    Overall, Nordeste is a wonderful destination for nature lovers,
+                    history buffs, and adventure seekers alike. With its stunning
+                    natural beauty, rich cultural heritage, and many outdoor
+                    activities, there is something for everyone to enjoy in this
+                    charming municipality.
+                  </p>
+                </m.div>
+              </div>
+                <div onClick={() => navigator(-1)} className="flex border-2 mt-4 border-tertiary px-6 py-2 cursor-pointer hover:bg-tertiary hover:text-white max-w-[90px] justify-center">
+                  <div className="flex items-center hover:text-white"><BsChevronCompactLeft size={20} /> Back</div>
+                </div>
+            </div>
+          </m.section>
         </div>
-      </m.section>
+      </div>
     );
 }
 

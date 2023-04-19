@@ -61,8 +61,8 @@ const Feedbacks = () => {
           ))}
         </div>
         <div className="flex justify-center space-x-4">
-          <BsChevronCompactLeft className="group-hover:block absolute top-[60%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer" onClick={prev} size={30} />
-          <BsChevronCompactRight className="group-hover:block absolute top-[60%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer" onClick={next} size={30} />
+          <BsChevronCompactLeft className="group-hover:block absolute top-[60%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer" onClick={prev} size={40} />
+          <BsChevronCompactRight className="group-hover:block absolute top-[60%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer" onClick={next} size={40} />
         </div>
       </div>
     </section>

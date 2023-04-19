@@ -27,35 +27,41 @@ function Gallery() {
 
   return (
     <m.div 
-    initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0.25 }}
-        variants={titleVariant()}
-    className='max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative group'>
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: true, amount: 0.25 }}
+  variants={titleVariant()}
+  className='max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative group flex flex-col justify-center'
+>
+  <div className='flex-grow'>
+    <div
+      style={{ backgroundImage: `url(${GalleryData[currentIndex].image})` }}
+      className='max-w-[1200px] h-full rounded-2xl bg-center bg-cover duration-500 mx-auto'
+    ></div>
+  </div>
+
+  <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+    <BsChevronCompactLeft onClick={prevSlide} size={20} />
+  </div>
+  <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+    <BsChevronCompactRight onClick={nextSlide} size={20} />
+  </div>
+
+  <div className='flex top-4 justify-center py-2'>
+    {GalleryData.map((slide, slideIndex) => (
       <div
-        style={{ backgroundImage: `url(${GalleryData[currentIndex].image})` }}
-        className='w-full h-full rounded-2xl bg-center bg-cover duration-500'
-      ></div>
-      {/* Left Arrow */}
-      <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-        <BsChevronCompactLeft onClick={prevSlide} size={30} />
+        key={slideIndex}
+        onClick={() => goToSlide(slideIndex)}
+        className='text-2xl cursor-pointer'
+      >
+        <RiRadioButtonFill />
       </div>
-      {/* Right Arrow */}
-      <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-        <BsChevronCompactRight onClick={nextSlide} size={30} />
-      </div>
-      <div className='flex top-4 justify-center py-2'>
-        {GalleryData.map((slide, slideIndex) => (
-          <div
-            key={slideIndex}
-            onClick={() => goToSlide(slideIndex)}
-            className='text-2xl cursor-pointer'
-          >
-            <RiRadioButtonFill />
-          </div>
-        ))}
-      </div>
-    </m.div>
+    ))}
+  </div>
+</m.div>
+
+
+
   );
 }
 

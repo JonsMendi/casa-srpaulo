@@ -1,9 +1,8 @@
 import React from 'react';
-import './Footer.css';
 
 function Footer() {
     return (
-        <footer className="w-full bg-tertiary text-white py-4 mt-auto">
+        <footer className="w-full bg-tertiary text-white py-3 mt-auto">
           <div className="container flex justify-center mx-auto px-4 text-center">
             <p className="text-sm mb-2">
               &copy; {new Date().getFullYear()} João Borges Mendonça, the grandson. All rights reserved.&nbsp;|&nbsp;
