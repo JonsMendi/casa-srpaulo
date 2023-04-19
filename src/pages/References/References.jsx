@@ -19,7 +19,7 @@ function References  ()  {
         id="references"
       >
         <div
-          className={` inset-0 top-[100px]  max-w-8xl mx-auto ${styles.paddingX} items-start gap-5`}
+          className={`inset-0 top-[100px] max-w-8xl mx-auto ${styles.paddingX} items-start gap-5`}
         >
           <m.div
             variants={titleVariant()}
@@ -32,7 +32,7 @@ function References  ()  {
               {t("nordeste.title")}
             </h2>
           </m.div>
-          <div className="flex">
+          <div className="flex flex-col lg:flex-row">
             <m.div
               variants={titleVariant()}
               className="mt-4 mr-4 text-secondary text-[17px] max-w-3xl leading-[30px] flex-1"
