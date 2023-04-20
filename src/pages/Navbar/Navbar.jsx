@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-scroll';
-import { GrLanguage } from 'react-icons/gr';
 import { AiOutlineHome, AiOutlineCheck, AiOutlineGlobal } from 'react-icons/ai';
 
 
