@@ -3,10 +3,12 @@ import { testimonials } from "../../utilities/data";
 import FeedbackCard from "../../cards/feedbackCard";
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 const Feedbacks = () => {
   const [firstCardIndex, setFirstCardIndex] = useState(0);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleResize = () => {
@@ -51,8 +53,8 @@ const Feedbacks = () => {
       <div className={`mt-12 rounded-[20px]`}>
         <div className={`rounded-2xl ${styles.padding} min-h-[300px]`}>
           <div>
-            <p className={`${styles.sectionSubText} text-tertiary`}>What others say</p>
-            <h2 className={styles.sectionHeadText}>Appreciation.</h2>
+            <p className={`${styles.sectionSubText} text-tertiary`}>{t("feedback.subtitle")}</p>
+            <h2 className={styles.sectionHeadText}>{t("feedback.title")}</h2>
           </div>
         </div>
         <div className={`-mt-20 pb-14 ${styles.paddingX} flex justify-center flex-nowrap gap-7 overflow-x-hidden min-h-[500px]`}>
